@@ -1,0 +1,135 @@
+{
+	"name": "Calendar",
+	"properties": {
+		"Name": "Calendar",
+		"EntityType": "TABLE",
+		"Namespace": {
+			"DatabaseName": "adworks"
+		},
+		"Description": "",
+		"TableType": "EXTERNAL",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"StorageDescriptor": {
+			"Columns": [
+                {
+                    "Name": "DateKey",
+                    "OriginDataTypeName": {
+                        "TypeName": "integer",
+                        "IsComplexType": false,
+                        "IsNullable": true,
+                        "Properties": {
+                            "HIVE_TYPE_STRING": "integer"
+                        }
+                    }
+                },
+                {
+                    "Name": "Date",
+                    "OriginDataTypeName": {
+                        "TypeName": "date",
+                        "IsComplexType": false,
+                        "IsNullable": true,
+                        "Properties": {
+                            "DateFormat": "MM/dd/YYYY",
+                            "HIVE_TYPE_STRING": "date"
+                        }
+                    }
+                },
+                {
+                    "Name": "FiscalYear",
+                    "OriginDataTypeName": {
+                        "TypeName": "string",
+                        "IsComplexType": false,
+                        "IsNullable": true,
+                        "Length": 8000,
+                        "Properties": {
+                            "HIVE_TYPE_STRING": "string"
+                        }
+                    }
+                },
+                {
+                    "Name": "FiscalQuarter",
+                    "OriginDataTypeName": {
+                        "TypeName": "string",
+                        "IsComplexType": false,
+                        "IsNullable": true,
+                        "Length": 8000,
+                        "Properties": {
+                            "HIVE_TYPE_STRING": "string"
+                        }
+                    }
+                },
+                {
+                    "Name": "Month",
+                    "OriginDataTypeName": {
+                        "TypeName": "string",
+                        "IsComplexType": false,
+                        "IsNullable": true,
+                        "Length": 8000,
+                        "Properties": {
+                            "HIVE_TYPE_STRING": "string"
+                        }
+                    }
+                },
+                {
+                    "Name": "FullDate",
+                    "OriginDataTypeName": {
+                        "TypeName": "string",
+                        "IsComplexType": false,
+                        "IsNullable": true,
+                        "Properties": {
+                            "HIVE_TYPE_STRING": "string"
+                        }
+                    }
+                },
+                {
+                    "Name": "MonthKey",
+                    "OriginDataTypeName": {
+                        "TypeName": "integer",
+                        "IsComplexType": false,
+                        "IsNullable": true,
+                        "Properties": {
+                            "HIVE_TYPE_STRING": "integer"
+                        }
+                    }
+                }
+            ],
+			"Format": {
+				"InputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat",
+				"FormatType": "parquet",
+				"SerializeLib": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe",
+				"Properties": {
+					"path": "abfss://raw@<adworksls>.dfs.core.windows.net/adworks/Calendar",
+					"FormatTypeSetToDatabaseDefault": false
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://raw@<adworksls>.dfs.core.windows.net/adworks/Calendar",
+				"Properties": {
+					"LinkedServiceName": "<adworksls>",
+					"LocationSetToDatabaseDefault": false
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"IsStoredAsSubdirectories": false
+		},
+		"Properties": {
+			"Description": "",
+			"DisplayFolderInfo": "{\"name\":\"Others\",\"colorCode\":\"\"}",
+			"PrimaryKeys": "",
+			"spark.sql.sources.provider": "parquet"
+		},
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false
+	},
+	"type": "TABLE"
+}

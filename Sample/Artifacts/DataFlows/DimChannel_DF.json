@@ -1,0 +1,136 @@
+{
+	"name": "DimChannel_DF",
+	"properties": {
+		"folder": {
+			"name": "adworkstarget"
+		},
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "ResellerChannelSource"
+				},
+				{
+					"name": "InternetChannelSource"
+				}
+			],
+			"sinks": [
+				{
+					"name": "DimChannel"
+				}
+			],
+			"transformations": [
+				{
+					"name": "SurrogateKey"
+				},
+				{
+					"name": "DistinctBusinessType"
+				},
+				{
+					"name": "ResellerChannelSelect"
+				},
+				{
+					"name": "DistinctChannel"
+				},
+				{
+					"name": "InternetChannelSelect"
+				},
+				{
+					"name": "ChannelResellerCategoryDerivedCol"
+				},
+				{
+					"name": "InternetFilter"
+				},
+				{
+					"name": "ChannelSalesCategoryDerivedCol"
+				},
+				{
+					"name": "ChannelUnion"
+				},
+				{
+					"name": "select1"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          PostalCode as string,",
+				"          CountryRegion as string,",
+				"          StateProvince as string,",
+				"          City as string,",
+				"          Reseller as string,",
+				"          BusinessType as string,",
+				"          ResellerId as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     store: 'synapse',",
+				"     databaseType: 'spark',",
+				"     format: 'table',",
+				"     database: 'adworks',",
+				"     tableName: 'Reseller') ~> ResellerChannelSource",
+				"source(output(",
+				"          SalesAmount as double,",
+				"          TotalProductCost as double,",
+				"          ProductStandardCost as double,",
+				"          UnitPriceDiscountPct as boolean,",
+				"          ExtendedAmount as double,",
+				"          UnitPrice as double,",
+				"          OrderQuantity as short,",
+				"          SalesTerritoryId as short,",
+				"          OrderDate as date,",
+				"          ProductId as short,",
+				"          SalesOrderLineId as integer,",
+				"          Channel as string,",
+				"          SalesOrder as string,",
+				"          CustomerId as string,",
+				"          ResellerId as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     store: 'synapse',",
+				"     databaseType: 'spark',",
+				"     format: 'table',",
+				"     database: 'adworks',",
+				"     tableName: 'Sales') ~> InternetChannelSource",
+				"ChannelUnion keyGenerate(output(ChannelKey as long),",
+				"     startAt: 1L,",
+				"     stepValue: 1L) ~> SurrogateKey",
+				"ResellerChannelSource aggregate(groupBy(BusinessType),",
+				"     BusinessType_agg = first(BusinessType)) ~> DistinctBusinessType",
+				"ChannelResellerCategoryDerivedCol select(mapColumn(",
+				"          Channel = BusinessType,",
+				"          ChannelCategory",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> ResellerChannelSelect",
+				"InternetChannelSource aggregate(groupBy(Channel),",
+				"     Channel_agg = first(Channel)) ~> DistinctChannel",
+				"ChannelSalesCategoryDerivedCol select(mapColumn(",
+				"          Channel,",
+				"          ChannelCategory",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> InternetChannelSelect",
+				"DistinctBusinessType derive(ChannelCategory = 'Reseller') ~> ChannelResellerCategoryDerivedCol",
+				"DistinctChannel filter(Channel=='Internet') ~> InternetFilter",
+				"InternetFilter derive(ChannelCategory = 'Internet') ~> ChannelSalesCategoryDerivedCol",
+				"ResellerChannelSelect, InternetChannelSelect union(byName: true)~> ChannelUnion",
+				"SurrogateKey select(mapColumn(",
+				"          Channel,",
+				"          ChannelCategory,",
+				"          ChannelKey",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1",
+				"select1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     store: 'synapse',",
+				"     databaseType: 'spark',",
+				"     format: 'table',",
+				"     database: 'adworkstarget',",
+				"     tableName: 'DimChannel',",
+				"     recreate:true) ~> DimChannel"
+			]
+		}
+	}
+}

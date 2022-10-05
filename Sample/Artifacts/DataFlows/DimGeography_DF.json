@@ -1,0 +1,121 @@
+{
+	"name": "DimGeography_DF",
+	"properties": {
+		"folder": {
+			"name": "adworkstarget"
+		},
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "CustomerGeographySource"
+				},
+				{
+					"name": "ResellerGeographySource"
+				}
+			],
+			"sinks": [
+				{
+					"name": "DimGeography"
+				}
+			],
+			"transformations": [
+				{
+					"name": "surrogateKey"
+				},
+				{
+					"name": "DistinctCustomerGeography"
+				},
+				{
+					"name": "DistinctResellerGeography"
+				},
+				{
+					"name": "CustomerGeographySelect"
+				},
+				{
+					"name": "ResellerGeographySelect"
+				},
+				{
+					"name": "GeographyUnion"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          CustomerId as string,",
+				"          Customer as string,",
+				"          City as string,",
+				"          StateProvince as string,",
+				"          PostalCode as string,",
+				"          CountryRegion as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     store: 'synapse',",
+				"     databaseType: 'spark',",
+				"     format: 'table',",
+				"     database: 'adworks',",
+				"     tableName: 'CustomerData') ~> CustomerGeographySource",
+				"source(output(",
+				"          PostalCode as string,",
+				"          CountryRegion as string,",
+				"          StateProvince as string,",
+				"          City as string,",
+				"          Reseller as string,",
+				"          BusinessType as string,",
+				"          ResellerId as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     store: 'synapse',",
+				"     databaseType: 'spark',",
+				"     format: 'table',",
+				"     database: 'adworks',",
+				"     tableName: 'Reseller') ~> ResellerGeographySource",
+				"GeographyUnion keyGenerate(output(GeographyKey as long),",
+				"     startAt: 1L,",
+				"     stepValue: 1L) ~> surrogateKey",
+				"CustomerGeographySource aggregate(groupBy(City,",
+				"          StateProvince,",
+				"          PostalCode,",
+				"          CountryRegion),",
+				"     City_agg = first(City),",
+				"          StateProvince_agg = first(StateProvince),",
+				"          PostalCode_agg = first(PostalCode),",
+				"          CountryRegion_agg = first(CountryRegion)) ~> DistinctCustomerGeography",
+				"ResellerGeographySource aggregate(groupBy(PostalCode,",
+				"          CountryRegion,",
+				"          StateProvince,",
+				"          City),",
+				"     PostalCode_agg = first(PostalCode),",
+				"          CountryRegion_agg = first(CountryRegion),",
+				"          StateProvince_agg = first(StateProvince),",
+				"          City_agg = first(City)) ~> DistinctResellerGeography",
+				"DistinctCustomerGeography select(mapColumn(",
+				"          City,",
+				"          StateProvince,",
+				"          PostalCode,",
+				"          CountryRegion",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> CustomerGeographySelect",
+				"DistinctResellerGeography select(mapColumn(",
+				"          PostalCode,",
+				"          CountryRegion,",
+				"          StateProvince,",
+				"          City",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> ResellerGeographySelect",
+				"CustomerGeographySelect, ResellerGeographySelect union(byName: true)~> GeographyUnion",
+				"surrogateKey sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     store: 'synapse',",
+				"     databaseType: 'spark',",
+				"     format: 'table',",
+				"     database: 'adworkstarget',",
+				"     tableName: 'DimGeography',",
+				"     recreate:true) ~> DimGeography"
+			]
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "relationship-SalesDate",
+	"properties": {
+		"Name": "relationship-SalesDate",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "adworks"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Sales",
+		"ToTableName": "Calendar",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "OrderDate",
+				"ToColumnName": "DateKey"
+			}
+		],
+		"RelationshipType": 0
+	},
+	"type": "RELATIONSHIP"
+}

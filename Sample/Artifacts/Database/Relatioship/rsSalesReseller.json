@@ -1,0 +1,23 @@
+{
+	"name": "relationship-SalesReseller",
+	"properties": {
+		"Name": "relationship-SalesReseller",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "adworks"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Sales",
+		"ToTableName": "Reseller",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "ResellerId",
+				"ToColumnName": "ResellerId"
+			}
+		],
+		"RelationshipType": 0
+	},
+	"type": "RELATIONSHIP"
+}

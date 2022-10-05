@@ -1,0 +1,25 @@
+{
+	"name": "adworks",
+	"properties": {
+		"Name": "adworks",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://raw@<adworksls>.dfs.core.windows.net/adworks",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "<adworksls>"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 5,
+		"ObjectId": "b9dcf732-8a65-472f-89c9-eb9e2e66418d"
+	},
+	"type": "DATABASE"
+}

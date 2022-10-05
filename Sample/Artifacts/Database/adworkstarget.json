@@ -1,0 +1,28 @@
+{
+	"name": "adworkstarget",
+	"properties": {
+		"Name": "adworkstarget",
+		"EntityType": "DATABASE",
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Retail\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true,
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate"
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://raw@<adworksls>.dfs.core.windows.net/adworkstarget",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "<adworksls>"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 13,
+		"ObjectId": "ab975da5-142d-4024-829a-1ef88d14f222"
+	},
+	"type": "DATABASE"
+}

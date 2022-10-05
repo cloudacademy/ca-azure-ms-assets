@@ -1,0 +1,30 @@
+{
+	"name": "DimProduct_DF",
+	"properties": {
+		"folder": {
+			"name": "adworkstarget"
+		},
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "ProductDataSource"
+				}
+			],
+			"sinks": [
+				{
+					"name": "DimProductSink"
+				}
+			],
+			"transformations": [
+				{
+					"name": "Deduplicated1ProductDataDeltaSource"
+				},
+				{
+					"name": "GenerateSurrogateKey"
+				}
+			],
+			"script": "source(output(\n\t\tCategory as string,\n\t\tSubcategory as string,\n\t\tModel as string,\n\t\tListPrice as double,\n\t\tColor as string,\n\t\tStandardCost as double,\n\t\tProduct as string,\n\t\tSKU as string,\n\t\tProductId as short\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tstore: 'synapse',\n\tdatabaseType: 'spark',\n\tformat: 'table',\n\tdatabase: 'adworks',\n\ttableName: 'ProductData',\n\tmanifestType: 'manifest') ~> ProductDataSource\nProductDataSource aggregate(groupBy(ProductId),\n\tCategory = last(Category),\n\t\tSubcategory = last(Subcategory),\n\t\tModel = last(Model),\n\t\tListPrice = last(ListPrice),\n\t\tColor = last(Color),\n\t\tStandardCost = last(StandardCost),\n\t\tProduct = last(Product),\n\t\tSKU = last(SKU)) ~> Deduplicated1ProductDataDeltaSource\nDeduplicated1ProductDataDeltaSource keyGenerate(output(ProductKey as long),\n\tstartAt: 1L,\n\tstepValue: 1L) ~> GenerateSurrogateKey\nGenerateSurrogateKey sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tstore: 'synapse',\n\tdatabaseType: 'spark',\n\tformat: 'table',\n\tdatabase: 'adworkstarget',\n\ttableName: 'DimProduct',\n\trecreate:true,\n\tmanifestType: 'manifest') ~> DimProductSink"
+		}
+	}
+}

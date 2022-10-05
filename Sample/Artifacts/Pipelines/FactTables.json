@@ -1,0 +1,33 @@
+{
+	"name": "FactTables",
+	"properties": {
+		"activities": [
+			{
+				"name": "FactSales",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 60
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "FactSales_DF",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		
+		"annotations": [],
+		"lastPublishTime": "2022-04-01T06:45:08Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

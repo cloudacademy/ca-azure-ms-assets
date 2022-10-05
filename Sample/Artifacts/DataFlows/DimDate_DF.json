@@ -1,0 +1,52 @@
+{
+	"name": "DimDate_DF",
+	"properties": {
+		"folder": {
+			"name": "adworkstarget"
+		},
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "CalendarSource"
+				}
+			],
+			"sinks": [
+				{
+					"name": "DimDateSink"
+				}
+			],
+			"transformations": [
+				{
+					"name": "DateKey"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          DateKey as date,",
+              			"          Date as date,",
+                		"          FiscalYear as string,",
+               			"          FiscalQuarter as string,",
+               			"          Month as string,",
+               			"          FullDate as string,",
+              			"          MonthKey as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     store: 'synapse',",
+				"     databaseType: 'spark',",
+				"     format: 'table',",
+				"     database: 'adworks',",
+				"     tableName: 'Calendar') ~> CalendarSource",
+				"CalendarSource derive(DateKeyAltered = toInteger(toString(DateKey, \"yyyyMMdd\"))) ~> DateKey",
+				"DateKey sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     store: 'synapse',",
+				"     databaseType: 'spark',",
+				"     format: 'table',",
+				"     database: 'adworkstarget',",
+				"     tableName: 'DimDate') ~> DimDateSink"
+			]
+		}
+	}
+}

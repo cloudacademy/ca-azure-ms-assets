@@ -1,0 +1,43 @@
+{
+	"name": "adworks_DF",
+	"properties": {
+		"folder": {
+			"name": "adworks"
+		},
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "adworksRaw",
+						"type": "DatasetReference"
+					},
+					"name": "CSVSource"
+				}
+			],
+			"sinks": [
+				{
+					"name": "adworksSink"
+				}
+			],
+			"transformations": [],
+			"scriptLines": [
+				"parameters{",
+				"     tableName as string",
+				"}",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     inferDriftedColumnTypes: true,",
+				"     ignoreNoFilesFound: false) ~> CSVSource",
+				"CSVSource sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     store: 'synapse',",
+				"     databaseType: 'spark',",
+				"     format: 'table',",
+				"     database: 'adworks',",
+				"     tableName: ($tableName),",
+				"     recreate:true) ~> adworksSink"
+			]
+		}
+	}
+}

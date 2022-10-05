@@ -1,0 +1,702 @@
+PostalCode,CountryRegion,StateProvince,City,Reseller,BusinessType,ResellerKey,ResellerId
+98104,United States,Washington,Seattle,A Bike Store,Value Added Reseller,AW00000001,1
+98055,United States,Washington,Renton,Progressive Sports,Specialty Bike Shop,AW00000002,2
+75061,United States,Texas,Irving,Advanced Bike Components,Warehouse,AW00000003,3
+78701,United States,Texas,Austin,Modular Cycle Systems,Value Added Reseller,AW00000004,4
+94536,United States,California,Fremont,Metropolitan Sports Supply,Specialty Bike Shop,AW00000005,5
+93010,United States,California,Camarillo,Aerobic Exercise Company,Warehouse,AW00000006,6
+84101,United States,Utah,Salt Lake City,Associated Bikes,Value Added Reseller,AW00000007,7
+33127,United States,Florida,Miami,Exemplary Cycles,Specialty Bike Shop,AW00000008,8
+38054,United States,Tennessee,Millington,Tandem Bicycle Store,Warehouse,AW00000009,9
+V5A 3A6,Canada,British Columbia,Burnaby,Rural Cycle Emporium,Value Added Reseller,AW00000010,10
+M4B 1V7,Canada,Ontario,Toronto,Sharp Bikes,Specialty Bike Shop,AW00000011,11
+M4B 1V7,Canada,Ontario,Toronto,Bikes and Motorbikes,Warehouse,AW00000012,12
+91940,France,Essonne,Les Ulis,Country Parts Shop,Value Added Reseller,AW00000013,13
+60075,Germany,Saarland,Frankfurt am Main,Bicycle Warehouse Inc.,Specialty Bike Shop,AW00000014,14
+2060,Australia,New South Wales,Lavender Bay,Budget Toy Store,Warehouse,AW00000015,15
+SE1 8HL,United Kingdom,England,London,Bulk Discount Store,Value Added Reseller,AW00000016,16
+23607,United States,Virginia,Newport News,Trusted Catalog Store,Specialty Bike Shop,AW00000017,17
+49464,United States,Michigan,Zeeland,Catalog Store,Warehouse,AW00000018,18
+98011,United States,Washington,Bothell,Center Cycle Shop,Value Added Reseller,AW00000019,19
+98031,United States,Washington,Kent,Central Discount Store,Specialty Bike Shop,AW00000020,20
+75061,United States,Texas,Irving,Chic Department Stores,Warehouse,AW00000021,21
+57049,United States,South Dakota,North Sioux City,Travel Systems,Value Added Reseller,AW00000022,22
+94583,United States,California,San Ramon,Bike World,Specialty Bike Shop,AW00000023,23
+94587,United States,California,Union City,Eastside Department Store,Warehouse,AW00000024,24
+90245,United States,California,El Segundo,Coalition Bike Company,Value Added Reseller,AW00000025,25
+33127,United States,Florida,Miami,Stylish Department Stores,Specialty Bike Shop,AW00000026,26
+38054,United States,Tennessee,Millington,Sports Sales and Rental,Warehouse,AW00000027,27
+M4B 1V6,Canada,Ontario,Toronto,Commuter Bicycle Store,Value Added Reseller,AW00000028,28
+K0J 1J0,Canada,Ontario,Chalk Riber,Cross-Country Riding Supplies,Specialty Bike Shop,AW00000029,29
+G1R,Canada,Quebec,Quebec,Cycle Merchants,Warehouse,AW00000030,30
+75013,France,Seine (Paris),Paris,Wheels Inc.,Value Added Reseller,AW00000031,31
+70511,Germany,Saarland,Stuttgart,Precision Gears Inc.,Specialty Bike Shop,AW00000032,32
+2060,Australia,New South Wales,Lavender Bay,Global Sports Outlet,Warehouse,AW00000033,33
+WA3 7BH,United Kingdom,England,Warrington,Cycles Wholesaler & Mfg.,Value Added Reseller,AW00000034,34
+2892,United States,Rhode Island,West Kingston,Economic Parts Supply,Specialty Bike Shop,AW00000035,35
+46601,United States,Indiana,South Bend,Exotic Bikes,Warehouse,AW00000036,36
+98371,United States,Washington,Puyallup,Two Bike Shops,Value Added Reseller,AW00000037,37
+59101,United States,Montana,Billings,Finer Mart,Specialty Bike Shop,AW00000038,38
+55436,United States,Minnesota,Edina,Fitness Hotel,Warehouse,AW00000039,39
+78040,United States,Texas,Laredo,Journey Sporting Goods,Value Added Reseller,AW00000040,40
+95035,United States,California,Milpitas,Distant Inn,Specialty Bike Shop,AW00000041,41
+92625,United States,California,Newport Beach,Healthy Activity Store,Warehouse,AW00000042,42
+84101,United States,Utah,Salt Lake City,Frugal Bike Shop,Value Added Reseller,AW00000043,43
+35801,United States,Alabama,Huntsville,Games and Sport Supply Company,Specialty Bike Shop,AW00000044,44
+37086,United States,Tennessee,La Vergne,Every Bike Shop,Warehouse,AW00000045,45
+T2P 2G8,Canada,Alberta,Calgary,Gear-Shift Bikes Limited,Value Added Reseller,AW00000046,46
+M4B 1V6,Canada,Ontario,Toronto,Greater Bike Store,Specialty Bike Shop,AW00000047,47
+H1Y 2H7,Canada,Quebec,Montreal,Grand Industries,Warehouse,AW00000048,48
+59223,France,Nord,Roncq,Neighborhood Bicycle Storehouse,Value Added Reseller,AW00000049,49
+14197,Germany,Brandenburg,Berlin,Hometown Riding Supplies,Specialty Bike Shop,AW00000050,50
+6105,Australia,South Australia,Cloverdale,Ideal Components,Warehouse,AW00000051,51
+GL7 1RY,United Kingdom,England,Gloucestershire,Instruments and Parts Company,Value Added Reseller,AW00000052,52
+2062,United States,Massachusetts,Norwood,Incomparable Bicycle Store,Specialty Bike Shop,AW00000053,53
+11747,United States,New York,Melville,Larger Cycle Shop,Warehouse,AW00000054,54
+97504,United States,Oregon,Medford,Kickstands and Accessories Company,Value Added Reseller,AW00000055,55
+97205,United States,Oregon,Portland,Latest Accessories Sales,Specialty Bike Shop,AW00000056,56
+60185,United States,Illinois,West Chicago,Leading Sales & Repair,Warehouse,AW00000057,57
+60610,United States,Illinois,Chicago,Largest Bike Store,Value Added Reseller,AW00000058,58
+93291,United States,California,Visalia,Locks Company,Specialty Bike Shop,AW00000059,59
+94541,United States,California,Hayward,Main Bicycle Services,Warehouse,AW00000060,60
+92831,United States,California,Fullerton,Many Bikes Store,Value Added Reseller,AW00000061,61
+37203,United States,Tennessee,Nashville,Manufacturers Inc,Specialty Bike Shop,AW00000062,62
+27412,United States,North Carolina,Greensboro,Metro Bike Mart,Warehouse,AW00000063,63
+M4B 1V6,Canada,Ontario,Toronto,Metal Clearing House,Value Added Reseller,AW00000064,64
+M9V 4W3,Canada,Ontario,Weston,Metro Manufacturing,Specialty Bike Shop,AW00000065,65
+V5H 3Z7,Canada,British Columbia,Burnaby,Neighborhood Store,Warehouse,AW00000066,66
+91370,France,Essonne,Verrieres Le Buisson,Self-Contained Cycle Parts Company,Value Added Reseller,AW00000067,67
+63151,Germany,Hamburg,Muehlheim,North Bike Company,Specialty Bike Shop,AW00000068,68
+2060,Australia,New South Wales,Lavender Bay,Online Bike Catalog,Warehouse,AW00000069,69
+C2H 7AU,United Kingdom,England,London,Outdoor Aerobic Systems Company,Value Added Reseller,AW00000070,70
+6032,United States,Connecticut,Farmington,Outdoor Distributors,Specialty Bike Shop,AW00000071,71
+3064,United States,New Hampshire,Nashua,Outdoor Equipment Store,Warehouse,AW00000072,72
+98045,United States,Washington,North Bend,Outdoor Sports Supply,Value Added Reseller,AW00000073,73
+97205,United States,Oregon,Portland,Parcel Express Delivery Service,Specialty Bike Shop,AW00000074,74
+75040,United States,Texas,Garland,Paint Supply,Warehouse,AW00000075,75
+60191,United States,Illinois,Wood Dale,Out-of-the-Way Hotels,Value Added Reseller,AW00000076,76
+92102,United States,California,San Diego,Mechanical Products Ltd.,Specialty Bike Shop,AW00000077,77
+91764,United States,California,Ontario,Preferred Bikes,Warehouse,AW00000078,78
+80631,United States,Colorado,Greeley,Reasonable Bicycle Sales,Value Added Reseller,AW00000079,79
+33322,United States,Florida,Sunrise,Racks and Security Systems,Specialty Bike Shop,AW00000080,80
+33127,United States,Florida,Miami,Rally Day Mall,Warehouse,AW00000081,81
+V7L 4J4,Canada,British Columbia,Vancouver,Refined Department Stores,Value Added Reseller,AW00000082,82
+K4B 1S2,Canada,Ontario,Ottawa,Requisite Part Supply,Specialty Bike Shop,AW00000083,83
+M9W 3P3,Canada,Ontario,Etobicoke,Rewarding Activities Company,Warehouse,AW00000084,84
+92400,France,Hauts de Seine,Courbevoie,Roadway Bicycle Supply,Value Added Reseller,AW00000085,85
+45001,Germany,Hamburg,Essen,Bicycle Exporters,Specialty Bike Shop,AW00000086,86
+1597,Australia,New South Wales,Lane Cove,Rich Department Store,Warehouse,AW00000087,87
+MK8 8ZD,United Kingdom,England,Milton Keynes,Closest Bicycle Store,Value Added Reseller,AW00000088,88
+44074,United States,Ohio,Oberlin,Riverside Company,Specialty Bike Shop,AW00000089,89
+20151,United States,Virginia,Chantilly,Sales and Supply Company,Warehouse,AW00000090,90
+97005,United States,Oregon,Beaverton,Scooters and Bikes Store,Value Added Reseller,AW00000091,91
+98072,United States,Washington,Woodinville,Sports Commodities,Specialty Bike Shop,AW00000092,92
+78664,United States,Texas,Round Rock,Stationary Bikes and Stands,Warehouse,AW00000093,93
+76102,United States,Texas,Fort Worth,Specialty Sports Store,Value Added Reseller,AW00000094,94
+94566,United States,California,Pleasanton,Rural Department Store,Specialty Bike Shop,AW00000095,95
+92701,United States,California,Santa Ana,More Bikes!,Warehouse,AW00000096,96
+94560,United States,California,Newark,Mountain Bike Center,Value Added Reseller,AW00000097,97
+33127,United States,Florida,Miami,Superlative Bikes,Specialty Bike Shop,AW00000098,98
+34236,United States,Florida,Sarasota,Unified Sports Company,Warehouse,AW00000099,99
+L3S 3K2,Canada,Ontario,Markham,Up-To-Date Sports,Value Added Reseller,AW00000100,100
+M4B 1V7,Canada,Ontario,Toronto,Urban Sports Emporium,Specialty Bike Shop,AW00000101,101
+M4B 1V7,Canada,Ontario,Toronto,National Manufacturing,Warehouse,AW00000102,102
+93500,France,Seine Saint Denis,Pantin,The Bike Outlet,Value Added Reseller,AW00000103,103
+40605,Germany,Hessen,Duesseldorf,Very Best Sports Supply,Specialty Bike Shop,AW00000104,104
+2015,Australia,New South Wales,Alexandria,Volume Bike Sellers,Warehouse,AW00000105,105
+RG41 1QW,United Kingdom,England,Wokingham,West Side Mart,Value Added Reseller,AW00000106,106
+2368,United States,Massachusetts,Randolph,Wholesale Bikes,Specialty Bike Shop,AW00000107,107
+3904,United States,Maine,Kittery,Wheelsets Storehouse,Warehouse,AW00000108,108
+98027,United States,Washington,Issaquah,Travel Sports,Value Added Reseller,AW00000109,109
+83402,United States,Idaho,Idaho Falls,Vintage Sport Boutique,Value Added Reseller,AW00000110,110
+60120,United States,Illinois,Elgin,Westside Cycle Store,Specialty Bike Shop,AW00000111,111
+75201,United States,Texas,Dallas,Town Industries,Warehouse,AW00000112,112
+92335,United States,California,Fontana,Trendy Department Stores,Value Added Reseller,AW00000113,113
+94109,United States,California,San Francisco,Two Wheels Cycle Store,Specialty Bike Shop,AW00000114,114
+89431,United States,Nevada,Sparks,Security Racks and Locks Wholesalers,Warehouse,AW00000115,115
+30308,United States,Georgia,Atlanta,Retirement Activities Association,Value Added Reseller,AW00000116,116
+30024,United States,Georgia,Suwanee,Pedals Warehouse,Specialty Bike Shop,AW00000117,117
+M4B 1V7,Canada,Ontario,Toronto,Rapid Bikes,Warehouse,AW00000118,118
+J1E 2T7,Canada,Quebec,Pnot-Rouge,Red Bicycle Company,Value Added Reseller,AW00000119,119
+H1Y 2H5,Canada,Quebec,Montreal,Machines & Cycles Store,Specialty Bike Shop,AW00000120,120
+41100,France,Loir et Cher,Saint Ouen,Metro Sports Equipment,Warehouse,AW00000121,121
+14111,Germany,Hessen,Berlin,Off-Price Bike Center,Value Added Reseller,AW00000122,122
+2113,Australia,New South Wales,North Ryde,First Supplies,Specialty Bike Shop,AW00000123,123
+BD1 4SJ,United Kingdom,England,W. York,Nearby Sporting Goods,Warehouse,AW00000124,124
+6901,United States,Connecticut,Stamford,Immediate Repair Shop,Value Added Reseller,AW00000125,125
+13760,United States,New York,Endicott,Famous Bike Sales and Service,Specialty Bike Shop,AW00000126,126
+98052,United States,Washington,Redmond,Front Sporting Goods,Warehouse,AW00000127,127
+98801,United States,Washington,Wenatchee,Demand Distributors,Value Added Reseller,AW00000128,128
+60191,United States,Illinois,Wood Dale,Discount Bicycle Specialists,Specialty Bike Shop,AW00000129,129
+75201,United States,Texas,Dallas,Elite Bikes,Warehouse,AW00000130,130
+90245,United States,California,El Segundo,Eighth Bike Store,Value Added Reseller,AW00000131,131
+80030,United States,Colorado,Westminster,Another Sporting Goods Company,Specialty Bike Shop,AW00000132,132
+95354,United States,California,Modesto,Commercial Sporting Goods,Warehouse,AW00000133,133
+38054,United States,Tennessee,Millington,Budget Bike Company,Value Added Reseller,AW00000134,134
+38103,United States,Tennessee,Memphis,Wonderful Bikes Inc.,Specialty Bike Shop,AW00000135,135
+T2P 2G8,Canada,Alberta,Calgary,Wholesale Parts,Warehouse,AW00000136,136
+T2P 2G8,Canada,Alberta,Calgary,Transportation Options,Value Added Reseller,AW00000137,137
+V7L 4J4,Canada,British Columbia,Vancouver,South Bike Company,Specialty Bike Shop,AW00000138,138
+92700,France,Hauts de Seine,Colombes,Steel Inc.,Warehouse,AW00000139,139
+53131,Germany,Hamburg,Bonn,Teen Discount Store,Value Added Reseller,AW00000140,140
+2060,Australia,New South Wales,Lavender Bay,Rental Gallery,Specialty Bike Shop,AW00000141,141
+L4 4HB,United Kingdom,England,Liverpool,Riding Cycles,Warehouse,AW00000142,142
+6512,United States,Connecticut,East Haven,Modern Bike Store,Value Added Reseller,AW00000143,143
+10007,United States,New York,New York,Only Bikes and Accessories,Specialty Bike Shop,AW00000144,144
+98052,United States,Washington,Redmond,Raw Materials Inc,Warehouse,AW00000145,145
+98104,United States,Washington,Seattle,Latest Sports Equipment,Value Added Reseller,AW00000146,146
+60610,United States,Illinois,Chicago,Local Hardware Factory,Specialty Bike Shop,AW00000147,147
+60188,United States,Illinois,Carol Stream,Lots of Bikes Storehouse,Warehouse,AW00000148,148
+80030,United States,Colorado,Westminster,Initial Bike Company,Value Added Reseller,AW00000149,149
+95202,United States,California,Stockton,Fleet Bikes,Specialty Bike Shop,AW00000150,150
+90232,United States,California,Culver City,Futuristic Bikes,Warehouse,AW00000151,151
+30021,United States,Georgia,Clarkston,Distance Bikes,Value Added Reseller,AW00000152,152
+33755,United States,Florida,Clearwater,Widget Bicycle Specialists,Specialty Bike Shop,AW00000153,153
+V7L 4J4,Canada,British Columbia,Vancouver,Camping and Sports Store,Warehouse,AW00000154,154
+M4B 1V7,Canada,Ontario,Toronto,Corner Bicycle Supply,Value Added Reseller,AW00000155,155
+H1Y 2H7,Canada,Quebec,Montreal,Metal Processing Company,Specialty Bike Shop,AW00000156,156
+75019,France,Seine (Paris),Paris,Ace Bicycle Supply,Warehouse,AW00000157,157
+53131,Germany,Nordrhein-Westfalen,Bonn,Rural Sporting Goods,Value Added Reseller,AW00000158,158
+2113,Australia,New South Wales,North Ryde,Uncompromising Quality Co,Specialty Bike Shop,AW00000159,159
+OX16 8RS,United Kingdom,England,Oxon,Vigorous Sports Store,Warehouse,AW00000160,160
+46807,United States,Indiana,Fort Wayne,Weekend Tours,Value Added Reseller,AW00000161,161
+2889,United States,Rhode Island,Warwick,Tire Company,Specialty Bike Shop,AW00000162,162
+97601,United States,Oregon,Klamath Falls,Sports Merchandise,Warehouse,AW00000163,163
+97060,United States,Oregon,Troutdale,Suburban Cycle Shop,Value Added Reseller,AW00000164,164
+75201,United States,Texas,Dallas,Third Bike Store,Specialty Bike Shop,AW00000165,165
+75040,United States,Texas,Garland,Fitness Toy Store,Warehouse,AW00000166,166
+90746,United States,California,Carson,Farthermost Bike Shop,Value Added Reseller,AW00000167,167
+90201,United States,California,Bell Gardens,Economy Bikes Company,Specialty Bike Shop,AW00000168,168
+89408,United States,Nevada,Fernley,Downtown Hotel,Warehouse,AW00000169,169
+38103,United States,Tennessee,Memphis,Excellent Riding Supplies,Value Added Reseller,AW00000170,170
+30253,United States,Georgia,Mcdonough,Eighty Toy Stores,Specialty Bike Shop,AW00000171,171
+V6B 3P7,Canada,British Columbia,Richmond,Certified Sports Supply,Warehouse,AW00000172,172
+V7L 4J4,Canada,British Columbia,Vancouver,Sundry Sporting Goods,Value Added Reseller,AW00000173,173
+V3T 4W3,Canada,British Columbia,Surrey,Toy Manufacturing Inc,Specialty Bike Shop,AW00000174,174
+45000,France,Loiret,Orleans,Registered Cycle Store,Warehouse,AW00000175,175
+48001,Germany,Saarland,Münster,Rodeway Bike Store,Value Added Reseller,AW00000176,176
+4171,Australia,Queensland,Hawthorne,Plastic Products Manufacturers,Specialty Bike Shop,AW00000177,177
+BD1 4SJ,United Kingdom,England,W. York,Rampart Amusement Company,Warehouse,AW00000178,178
+44060,United States,Ohio,Mentor,Fourth Bike Store,Value Added Reseller,AW00000179,179
+48342,United States,Michigan,Pontiac,Full-Service Bike Store,Specialty Bike Shop,AW00000180,180
+97015-6403,United States,Oregon,Clackamas,Family Entertainment Center,Warehouse,AW00000181,181
+97222,United States,Oregon,Milwaukie,Another Bicycle Company,Value Added Reseller,AW00000182,182
+60610,United States,Illinois,Chicago,This Area Sporting Goods,Specialty Bike Shop,AW00000183,183
+75006,United States,Texas,Carrollton,Go-cart and Bike Specialists,Warehouse,AW00000184,184
+95112,United States,California,San Jose,Weekend Bike Tours,Value Added Reseller,AW00000185,185
+87501,United States,New Mexico,Santa Fe,Thrilling Bike Tours,Specialty Bike Shop,AW00000186,186
+90703,United States,California,Cerritos,Trailblazing Sports,Warehouse,AW00000187,187
+33127,United States,Florida,Miami,Variety Bike Outlet,Value Added Reseller,AW00000188,188
+36602,United States,Alabama,Mobile,Principal Bicycle Supply,Specialty Bike Shop,AW00000189,189
+T2P 2G8,Canada,Alberta,Calgary,Racing Partners,Warehouse,AW00000190,190
+M4B 1V7,Canada,Ontario,Toronto,Non-Slip Pedal Company,Value Added Reseller,AW00000191,191
+M4B 1V7,Canada,Ontario,Toronto,Nuts and Bolts Mfg.,Specialty Bike Shop,AW00000192,192
+31770,France,Garonne (Haute),Colomiers,Perfect Toys,Warehouse,AW00000193,193
+80074,Germany,Hamburg,München,Mechanical Brake Manufacturers,Value Added Reseller,AW00000194,194
+2055,Australia,New South Wales,North Sydney,Inexpensive Parts Shop,Specialty Bike Shop,AW00000195,195
+MK8 8ZD,United Kingdom,England,Milton Keynes,Exhibition Showroom,Warehouse,AW00000196,196
+48375,United States,Michigan,Novi,Fabrikam Inc. West,Value Added Reseller,AW00000197,197
+48034,United States,Michigan,Southfield,Field Trip Inc,Specialty Bike Shop,AW00000198,198
+98055,United States,Washington,Renton,Authorized Bike Sales and Rental,Warehouse,AW00000199,199
+98366,United States,Washington,Port Orchard,Basic Bike Company,Value Added Reseller,AW00000200,200
+75201,United States,Texas,Dallas,Unsurpassed Bikes,Specialty Bike Shop,AW00000201,201
+75074,United States,Texas,Plano,Two-Seater Bikes,Warehouse,AW00000202,202
+91016,United States,California,Monrovia,Separate Parts Corporation,Value Added Reseller,AW00000203,203
+90505,United States,California,Torrance,Traction Tire Company,Specialty Bike Shop,AW00000204,204
+85225,United States,Arizona,Chandler,Rally Master Company Inc,Warehouse,AW00000205,205
+27104,United States,North Carolina,Winston-Salem,New and Used Bicycles,Value Added Reseller,AW00000206,206
+27803,United States,North Carolina,Rocky Mount,Lubricant and Grease Suppliers,Specialty Bike Shop,AW00000207,207
+M4B 1V7,Canada,Ontario,Toronto,Professional Cyclists,Warehouse,AW00000208,208
+M1V 4M2,Canada,Ontario,Scarborough,Purple Bicycle Company,Value Added Reseller,AW00000209,209
+M4B 1V5,Canada,Ontario,Toronto,Gasless Cycle Shop,Specialty Bike Shop,AW00000210,210
+77127,France,Seine et Marne,Lieusaint,Sports Products Store,Warehouse,AW00000211,211
+80074,Germany,Hessen,München,Enterprise Center,Value Added Reseller,AW00000212,212
+3205,Australia,Victoria,South Melbourne,Fast Bike Works,Specialty Bike Shop,AW00000213,213
+LA1 1LN,United Kingdom,England,Lancaster,Exclusive Bicycle Mart,Warehouse,AW00000214,214
+6880,United States,Connecticut,Westport,Eleventh Bike Store,Value Added Reseller,AW00000215,215
+6710,United States,Connecticut,Waterbury,Painters Bicycle Specialists,Specialty Bike Shop,AW00000216,216
+98584,United States,Washington,Shelton,City Manufacturing,Warehouse,AW00000217,217
+98632,United States,Washington,Longview,Sure & Reliable Sporting Goods,Value Added Reseller,AW00000218,218
+60610,United States,Illinois,Chicago,Extras Sporting Goods,Value Added Reseller,AW00000219,219
+63103,United States,Missouri,Saint Louis,Best o Bikes,Specialty Bike Shop,AW00000220,220
+88001,United States,New Mexico,Las Cruces,Bike Dealers Association,Warehouse,AW00000221,221
+80203,United States,Colorado,Denver,Sample Bike Store,Value Added Reseller,AW00000222,222
+80110,United States,Colorado,Englewood,Paints and Solvents Company,Specialty Bike Shop,AW00000223,223
+35630,United States,Alabama,Florence,Pedal Systems Company,Warehouse,AW00000224,224
+42718,United States,Kentucky,Campbellsville,Optimal Bikes,Value Added Reseller,AW00000225,225
+8Y,Canada,Quebec,Hull,Leisure Activities,Specialty Bike Shop,AW00000226,226
+M4B 1V5,Canada,Ontario,Toronto,Health Spa Limited,Warehouse,AW00000227,227
+K4B 1S1,Canada,Ontario,Ottawa,Home Town Bike Store,Value Added Reseller,AW00000228,228
+92700,France,Hauts de Seine,Colombes,Instant Cycle Store,Specialty Bike Shop,AW00000229,229
+65800,Germany,Hessen,Bad Soden,Global Bike Retailers,Warehouse,AW00000230,230
+2060,Australia,New South Wales,Lavender Bay,Helmets and Cycles,Value Added Reseller,AW00000231,231
+RG24 8PL,United Kingdom,England,Basingstoke Hants,Exceptional Cycle Services,Specialty Bike Shop,AW00000232,232
+13413,United States,New York,New Hartford,Fashionable Department Stores,Warehouse,AW00000233,233
+46204,United States,Indiana,Indianapolis,Eastside Sporting Goods,Value Added Reseller,AW00000234,234
+98036,United States,Washington,Lynnwood,Certified Bicycle Supply,Specialty Bike Shop,AW00000235,235
+98104,United States,Washington,Seattle,Closeout Boutique,Warehouse,AW00000236,236
+60610,United States,Illinois,Chicago,Client Discount Store,Value Added Reseller,AW00000237,237
+65101,United States,Missouri,Jefferson City,A Great Bicycle Company,Specialty Bike Shop,AW00000238,238
+90401,United States,California,Santa Monica,Bicycle Merchandise Warehouse,Warehouse,AW00000239,239
+92867,United States,California,Orange,Wire Baskets and Parts,Value Added Reseller,AW00000240,240
+91303,United States,California,Canoga Park,Vale Riding Supplies,Specialty Bike Shop,AW00000241,241
+33127,United States,Florida,Miami,Spoke Manufacturers,Warehouse,AW00000242,242
+33143,United States,Florida,Kendall,Recreation Supplies,Value Added Reseller,AW00000243,243
+H1Y 2H8,Canada,Quebec,Montreal,Retail Discount Store,Specialty Bike Shop,AW00000244,244
+J4Z 1R4,Canada,Quebec,Brossard,Leather Seat Factory,Warehouse,AW00000245,245
+H1Y 2H7,Canada,Quebec,Montreal,Large Bike Shop,Value Added Reseller,AW00000246,246
+94310,France,Val de Marne,Orly,Major Amusement Company,Specialty Bike Shop,AW00000247,247
+66272,Germany,Saarland,Sulzbach Taunus,Good Bicycle Store,Warehouse,AW00000248,248
+3198,Australia,Victoria,Seaford,Helpful Sales and Repair Service,Value Added Reseller,AW00000249,249
+SW6 SBY,United Kingdom,England,London,Express Bike Services,Specialty Bike Shop,AW00000250,250
+6518,United States,Connecticut,Hamden,Endurance Bikes,Warehouse,AW00000251,251
+6460,United States,Connecticut,Milford,Classic Cycle Store,Value Added Reseller,AW00000252,252
+98371,United States,Washington,Puyallup,Roving Sports,Specialty Bike Shop,AW00000253,253
+98004,United States,Washington,Bellevue,Safe Cycles Shop,Warehouse,AW00000254,254
+77003,United States,Texas,Houston,Swift Cycles,Value Added Reseller,AW00000255,255
+75201,United States,Texas,Dallas,Rental Bikes,Specialty Bike Shop,AW00000256,256
+92025,United States,California,Escondido,Number 1 Supply,Warehouse,AW00000257,257
+95814,United States,California,Sacramento,Quantity Discounts,Value Added Reseller,AW00000258,258
+93065,United States,California,Simi Valley,Highway Bike Shop,Specialty Bike Shop,AW00000259,259
+33127,United States,Florida,Miami,Industrial Supplies,Warehouse,AW00000260,260
+32701,United States,Florida,Altamonte Springs,Functional Store North,Value Added Reseller,AW00000261,261
+T2P 2G8,Canada,Alberta,Calgary,General Industries,Specialty Bike Shop,AW00000262,262
+V5G 4S4,Canada,British Columbia,Burnaby,Farthest Bike Store,Warehouse,AW00000263,263
+M4B 1V5,Canada,Ontario,Toronto,Fasteners & Bolts Outlet,Value Added Reseller,AW00000264,264
+75016,France,Seine (Paris),Paris,Full Sports Supply,Specialty Bike Shop,AW00000265,265
+41485,Germany,Bayern,Grevenbroich,Excellent Bikes,Warehouse,AW00000266,266
+3000,Australia,Victoria,Melbourne,Cycle Parts and Accessories,Value Added Reseller,AW00000267,267
+HP10 9QY,United Kingdom,England,High Wycombe,Channel Outlet,Specialty Bike Shop,AW00000268,268
+44119,United States,Ohio,Euclid,Curbside Universe,Warehouse,AW00000269,269
+44128,United States,Ohio,North Randall,Active Transport Inc.,Value Added Reseller,AW00000270,270
+98671,United States,Washington,Washougal,Alternative Vehicles,Specialty Bike Shop,AW00000271,271
+98403,United States,Washington,Tacoma,Metro Cycle Shop,Warehouse,AW00000272,272
+78664,United States,Texas,Round Rock,A Typical Bike Shop,Value Added Reseller,AW00000273,273
+55802,United States,Minnesota,Duluth,Active Systems,Specialty Bike Shop,AW00000274,274
+90712,United States,California,Lakewood,Outdoor Sporting Goods,Warehouse,AW00000275,275
+93030,United States,California,Oxnard,Thrifty Parts and Sales,Value Added Reseller,AW00000276,276
+91801,United States,California,Alhambra,The Bicycle Accessories Company,Specialty Bike Shop,AW00000277,277
+32804,United States,Florida,Orlando,Tread Industries,Warehouse,AW00000278,278
+38103,United States,Tennessee,Memphis,Reliable Brake Systems,Value Added Reseller,AW00000279,279
+L4N,Canada,Ontario,Barrie,Standard Bikes,Specialty Bike Shop,AW00000280,280
+H1Y 2H7,Canada,Quebec,Montreal,Petroleum Products Distributors,Warehouse,AW00000281,281
+G1W,Canada,Quebec,Sainte-Foy,Quick Parts and Service,Value Added Reseller,AW00000282,282
+77680,France,Seine et Marne,Roissy en Brie,Racing Supply Distributors,Specialty Bike Shop,AW00000283,283
+14197,Germany,Nordrhein-Westfalen,Berlin,Nearby Bike Mall,Warehouse,AW00000284,284
+2113,Australia,New South Wales,North Ryde,Nearest Bike Store,Value Added Reseller,AW00000285,285
+RG7 5H7,United Kingdom,England,Reading,Number One Bike Co.,Specialty Bike Shop,AW00000286,286
+48071,United States,Michigan,Madison Heights,Handy Bike Services,Warehouse,AW00000287,287
+48185,United States,Michigan,Westland,Kickstand Sellers,Value Added Reseller,AW00000288,288
+98055,United States,Washington,Renton,Moderately-Priced Bikes Store,Specialty Bike Shop,AW00000289,289
+98225,United States,Washington,Bellingham,Friendly Bike Shop,Warehouse,AW00000290,290
+77520,United States,Texas,Baytown,Grand Bicycle Stores,Value Added Reseller,AW00000291,291
+77003,United States,Texas,Houston,Grease and Oil Products Company,Specialty Bike Shop,AW00000292,292
+84098,United States,Utah,Park City,Fashionable Bikes and Accessories,Warehouse,AW00000293,293
+92084,United States,California,Vista,Flawless Bike Shop,Value Added Reseller,AW00000294,294
+93030,United States,California,Oxnard,Engineered Bike Systems,Specialty Bike Shop,AW00000295,295
+35203,United States,Alabama,Birmingham,Extreme Toy Store,Warehouse,AW00000296,296
+40207,United States,Kentucky,Saint Matthews,Blue-Ribbon Bike Company,Value Added Reseller,AW00000297,297
+R3,Canada,Manitoba,Winnipeg,City Cycling,Specialty Bike Shop,AW00000298,298
+E2P 1E3,Canada,Brunswick,Saint John,Citywide Service and Repair,Warehouse,AW00000299,299
+K4B 1T7,Canada,Ontario,Ottawa,Nice Bikes,Value Added Reseller,AW00000300,300
+75019,France,Seine (Paris),Paris,Rural Mountain Bike Mart,Specialty Bike Shop,AW00000301,301
+63009,Germany,Saarland,Offenbach,Best Cycle Store,Warehouse,AW00000302,302
+2055,Australia,New South Wales,North Sydney,Seaside Bike Works,Value Added Reseller,AW00000303,303
+OX14 4SE,United Kingdom,England,Abingdon,Essential Bike Works,Specialty Bike Shop,AW00000304,304
+46360,United States,Indiana,Michigan City,Professional Sporting Goods,Warehouse,AW00000305,305
+48195,United States,Michigan,Southgate,Work and Play Association,Value Added Reseller,AW00000306,306
+98371,United States,Washington,Puyallup,Riding Associates,Specialty Bike Shop,AW00000307,307
+98201,United States,Washington,Everett,Rugged Bikes,Warehouse,AW00000308,308
+77003,United States,Texas,Houston,The Gear Store,Value Added Reseller,AW00000309,309
+61606,United States,Illinois,Peoria,Orange Bicycle Company,Specialty Bike Shop,AW00000310,310
+91786,United States,California,Upland,Principal Bike Company,Warehouse,AW00000311,311
+90232,United States,California,Culver City,Resale Services,Value Added Reseller,AW00000312,312
+92020,United States,California,El Cajon,Metropolitan Manufacturing,Specialty Bike Shop,AW00000313,313
+38804,United States,Mississippi,Tupelo,One-Piece Handle Bars,Warehouse,AW00000314,314
+32952,United States,Florida,Merritt Island,Juvenile Sports Equipment,Value Added Reseller,AW00000315,315
+L5A 1H6,Canada,Ontario,Mississauga,Low Price Cycles,Specialty Bike Shop,AW00000316,316
+V5A 4X1,Canada,British Columbia,Burnaby,Finer Riding Supplies,Warehouse,AW00000317,317
+V8V,Canada,British Columbia,Victoria,First-Rate Outlet,Value Added Reseller,AW00000318,318
+93000,France,Seine Saint Denis,Bobigny,Cycles Sales and Repair,Specialty Bike Shop,AW00000319,319
+60082,Germany,Hamburg,Frankfurt am Main,Amalgamated Parts Shop,Warehouse,AW00000320,320
+2036,Australia,New South Wales,Matraville,Second Bike Shop,Value Added Reseller,AW00000321,321
+MK8 8DF,United Kingdom,England,Milton Keynes,Tachometers and Accessories,Specialty Bike Shop,AW00000322,322
+48226,United States,Michigan,Detroit,Metro Bike Works,Warehouse,AW00000323,323
+13214,United States,New York,De Witt,A Bicycle Association,Value Added Reseller,AW00000324,324
+98011,United States,Washington,Bothell,All Cycle Shop,Specialty Bike Shop,AW00000325,325
+98031,United States,Washington,Kent,Year-Round Sports,Warehouse,AW00000326,326
+63103,United States,Missouri,Saint Louis,World of Bikes,Value Added Reseller,AW00000327,327
+78204,United States,Texas,San Antonio,Totes & Baskets Company,Value Added Reseller,AW00000328,328
+90241,United States,California,Downey,Unicycles Bicycles and Tricycles,Specialty Bike Shop,AW00000329,329
+93230,United States,California,Hanford,The New Bike Store,Warehouse,AW00000330,330
+91764,United States,California,Ontario,Technical Parts Manufacturing,Value Added Reseller,AW00000331,331
+36104,United States,Alabama,Montgomery,Topnotch Bikes,Specialty Bike Shop,AW00000332,332
+37343,United States,Tennessee,Hixson,Resident Cycle Shop,Warehouse,AW00000333,333
+N2V,Canada,Ontario,Waterloo,Retreat Inn,Value Added Reseller,AW00000334,334
+L4W 5J3,Canada,Ontario,Mississauga,Scratch-Resistant Finishes Company,Specialty Bike Shop,AW00000335,335
+H1Y 2H8,Canada,Quebec,Montreal,Primary Bike Distributors,Warehouse,AW00000336,336
+92081,France,Hauts de Seine,Paris La Defense,Recreation Toy Store,Value Added Reseller,AW00000337,337
+70511,Germany,Saarland,Stuttgart,Rambling Tours,Specialty Bike Shop,AW00000338,338
+2036,Australia,New South Wales,Matraville,Major Bicycle Store,Warehouse,AW00000339,339
+RH15 9UD,United Kingdom,England,West Sussex,Nearby Cycle Shop,Value Added Reseller,AW00000340,340
+13041,United States,New York,Clay,Independent Outlet,Specialty Bike Shop,AW00000341,341
+46204,United States,Indiana,Indianapolis,Leather and Vinyl Manufacturing,Warehouse,AW00000342,342
+98926,United States,Washington,Ellensburg,Mail-Order Outlet,Value Added Reseller,AW00000343,343
+98201,United States,Washington,Everett,Fifth Bike Store,Specialty Bike Shop,AW00000344,344
+77338,United States,Texas,Humble,Genial Bike Associates,Warehouse,AW00000345,345
+61265,United States,Illinois,Moline,Great Bicycle Supply,Value Added Reseller,AW00000346,346
+95688,United States,California,Vacaville,Bike Universe,Specialty Bike Shop,AW00000347,347
+80537,United States,Colorado,Loveland,Bold Bike Accessories,Warehouse,AW00000348,348
+95112,United States,California,San Jose,Exercise Center,Value Added Reseller,AW00000349,349
+37203,United States,Tennessee,Nashville,Mountain Emporium,Specialty Bike Shop,AW00000350,350
+30253,United States,Georgia,Mcdonough,Acclaimed Bicycle Company,Warehouse,AW00000351,351
+T5,Canada,Alberta,Edmonton,Twelfth Bike Store,Value Added Reseller,AW00000352,352
+R3,Canada,Manitoba,Winnipeg,Two-Wheeled Transit Company,Specialty Bike Shop,AW00000353,353
+T2P 2G8,Canada,Alberta,Calgary,Serious Cycles,Warehouse,AW00000354,354
+75003,France,Seine (Paris),Paris,Spare Parts Co.,Value Added Reseller,AW00000355,355
+22001,Germany,Hessen,Hamburg,Speedometer Sales,Specialty Bike Shop,AW00000356,356
+5023,Australia,South Australia,Findon,Quality Bike Sales,Warehouse,AW00000357,357
+Y024 1GF,United Kingdom,England,York,Mail Market,Value Added Reseller,AW00000358,358
+45202,United States,Ohio,Cincinnati,Mechanical Sports Center,Specialty Bike Shop,AW00000359,359
+48601,United States,Michigan,Saginaw,Novelty Bikes,Warehouse,AW00000360,360
+98382,United States,Washington,Sequim,Fitness Supplies,Value Added Reseller,AW00000361,361
+99202,United States,Washington,Spokane,Grand Cycle Store,Specialty Bike Shop,AW00000362,362
+63074,United States,Missouri,Saint Ann,Immense Manufacturing Company,Warehouse,AW00000363,363
+63135,United States,Missouri,Ferguson,District Mall,Value Added Reseller,AW00000364,364
+92311,United States,California,Barstow,Distinctive Store,Specialty Bike Shop,AW00000365,365
+90040,United States,California,City Of Commerce,Extended Bike Sales,Warehouse,AW00000366,366
+92102,United States,California,San Diego,Brown Bicycle Company,Value Added Reseller,AW00000367,367
+30030,United States,Georgia,Decatur,Elemental Sporting Goods,Specialty Bike Shop,AW00000368,368
+41042,United States,Kentucky,Florence,Distinctive Cycles Sales & Service,Warehouse,AW00000369,369
+T2P 2G8,Canada,Alberta,Calgary,Acceptable Sales & Service,Value Added Reseller,AW00000370,370
+V3T 4W3,Canada,British Columbia,Surrey,Custom Sales and Service,Specialty Bike Shop,AW00000371,371
+7L,Canada,Ontario,Kingston,Top Bike Market,Warehouse,AW00000372,372
+91940,France,Essonne,Les Ulis,Township Inn,Value Added Reseller,AW00000373,373
+38231,Germany,Hessen,Salzgitter,Major Equipment Co,Specialty Bike Shop,AW00000374,374
+4169,Australia,Queensland,East Brisbane,Region Bike Company,Warehouse,AW00000375,375
+RG11 5TP,United Kingdom,England,Berkshire,Commerce Bicycle Specialists,Value Added Reseller,AW00000376,376
+48601,United States,Michigan,Saginaw,Grand Sport Boutique,Specialty Bike Shop,AW00000377,377
+45246,United States,Ohio,Springdale,Grown-up Bike Store,Warehouse,AW00000378,378
+97205,United States,Oregon,Portland,Fad Outlet,Value Added Reseller,AW00000379,379
+82001,United States,Wyoming,Cheyenne,First Department Stores,Specialty Bike Shop,AW00000380,380
+63103,United States,Missouri,Saint Louis,Bicycle Lines Distributors,Warehouse,AW00000381,381
+78204,United States,Texas,San Antonio,Beneficial Exercises and Activities,Value Added Reseller,AW00000382,382
+92373,United States,California,Redlands,Vehicle Shop,Specialty Bike Shop,AW00000383,383
+92173,United States,California,San Ysidro,Sparkling Paint and Finishes,Warehouse,AW00000384,384
+95020,United States,California,Gilroy,Sturdy Toys,Value Added Reseller,AW00000385,385
+29577,United States,South Carolina,Myrtle Beach,Touring Services,Specialty Bike Shop,AW00000386,386
+35801,United States,Alabama,Huntsville,Racing Association,Warehouse,AW00000387,387
+V7L 4J4,Canada,British Columbia,Vancouver,Road Way Sales and Rental,Value Added Reseller,AW00000388,388
+V3T 4W3,Canada,British Columbia,Surrey,Sixth Bike Store,Specialty Bike Shop,AW00000389,389
+N2V,Canada,Ontario,Waterloo,Plastic Parts Company,Warehouse,AW00000390,390
+75005,France,Seine (Paris),Paris,Pretty Bikes and Toys,Value Added Reseller,AW00000391,391
+20354,Germany,Hamburg,Hamburg,Primary Cycle Shop,Specialty Bike Shop,AW00000392,392
+2061,Australia,New South Wales,Milsons Point,Gears and Parts Company,Warehouse,AW00000393,393
+Y03 4TN,United Kingdom,England,York,Little Sports Center,Value Added Reseller,AW00000394,394
+48640,United States,Michigan,Midland,Online Bike Sellers,Specialty Bike Shop,AW00000395,395
+47362,United States,Indiana,New Castle,Executive Gift Store,Warehouse,AW00000396,396
+98104,United States,Washington,Seattle,Capable Sales and Service,Value Added Reseller,AW00000397,397
+83864,United States,Idaho,Sandpoint,Commendable Bikes,Specialty Bike Shop,AW00000398,398
+76541,United States,Texas,Killeen,Big Cycle Mall,Warehouse,AW00000399,399
+60433,United States,Illinois,Joliet,Local Sales and Rental,Value Added Reseller,AW00000400,400
+89106,United States,Nevada,Las Vegas,Brightwork Company,Specialty Bike Shop,AW00000401,401
+93010,United States,California,Camarillo,Pro Sporting Goods,Warehouse,AW00000402,402
+92530,United States,California,Lake Elsinore,Affordable Sports Equipment,Value Added Reseller,AW00000403,403
+38555,United States,Tennessee,Crossville,Activity Center,Specialty Bike Shop,AW00000404,404
+37660,United States,Tennessee,Kingsport,Sporting Goods and Bicycle Shop,Warehouse,AW00000405,405
+H1Y 2G5,Canada,Quebec,Outremont,The Commissary,Value Added Reseller,AW00000406,406
+H1Y 2H7,Canada,Quebec,Montreal,Workout Emporium,Specialty Bike Shop,AW00000407,407
+V6B 3P7,Canada,British Columbia,Richmond,Odometers and Accessories Company,Warehouse,AW00000408,408
+32300,France,Gers,Aujan Mournede,Outdoor Toy Store,Value Added Reseller,AW00000409,409
+24044,Germany,Saarland,Kiel,Pedaling Components,Specialty Bike Shop,AW00000410,410
+2055,Australia,New South Wales,North Sydney,Kids and Adults Cycle Shop,Warehouse,AW00000411,411
+B29 6SL,United Kingdom,England,Birmingham,Leisure Clearing House,Value Added Reseller,AW00000412,412
+10917,United States,New York,Central Valley,Margies Travel,Specialty Bike Shop,AW00000413,413
+47334,United States,Indiana,Daleville,Grand Discount Store,Warehouse,AW00000414,414
+99202,United States,Washington,Spokane,Imaginary Toys,Value Added Reseller,AW00000415,415
+98903,United States,Washington,Union Gap,Impromptu Trips,Specialty Bike Shop,AW00000416,416
+78204,United States,Texas,San Antonio,Genuine Bike Shop,Warehouse,AW00000417,417
+53182,United States,Wisconsin,Racine,Good Bike Shop,Value Added Reseller,AW00000418,418
+90650,United States,California,Norwalk,Exertion Activities Club,Specialty Bike Shop,AW00000419,419
+91403,United States,California,Sherman Oaks,Extreme Riding Supplies,Warehouse,AW00000420,420
+90605,United States,California,Whittier,Fitness Cycling,Value Added Reseller,AW00000421,421
+29340,United States,South Carolina,Gaffney,Consolidated Sales,Specialty Bike Shop,AW00000422,422
+39530,United States,Mississippi,Biloxi,Bike Rims Company,Warehouse,AW00000423,423
+L4E 3M5,Canada,Ontario,Richmond Hill,Bikes for Two,Value Added Reseller,AW00000424,424
+M9W 3P3,Canada,Ontario,Etobicoke,Bikes for Kids and Adults,Specialty Bike Shop,AW00000425,425
+L6W 2T7,Canada,Ontario,Brampton,Custom Accessories Company,Warehouse,AW00000426,426
+75010,France,Seine (Paris),Paris,Atypical Bike Company,Value Added Reseller,AW00000427,427
+30601,Germany,Nordrhein-Westfalen,Hannover,West Wind Distributors,Specialty Bike Shop,AW00000428,428
+2264,Australia,New South Wales,Silverwater,Unusual Bicycle Company,Warehouse,AW00000429,429
+RG12 8TB,United Kingdom,England,Bracknell,Uttermost Bike Shop,Value Added Reseller,AW00000430,430
+49423,United States,Michigan,Holland,Small Cycle Store,Specialty Bike Shop,AW00000431,431
+46204,United States,Indiana,Indianapolis,Super Sports Store,Warehouse,AW00000432,432
+98503,United States,Washington,Lacey,Thorough Parts and Repair Services,Value Added Reseller,AW00000433,433
+59801,United States,Montana,Missoula,Road-Way Mart,Specialty Bike Shop,AW00000434,434
+78404,United States,Texas,Corpus Christi,Satin Finish Company,Warehouse,AW00000435,435
+77840,United States,Texas,College Station,Sheet Metal Manufacturing,Value Added Reseller,AW00000436,436
+85004,United States,Arizona,Phoenix,Professional Cycle Store,Value Added Reseller,AW00000437,437
+89106,United States,Nevada,Las Vegas,Remarkable Bike Store,Specialty Bike Shop,AW00000438,438
+85701,United States,Arizona,Tucson,Regional Manufacturing,Warehouse,AW00000439,439
+32804,United States,Florida,Orlando,Hobby Store,Value Added Reseller,AW00000440,440
+42501,United States,Kentucky,Somerset,Leading Bike Distributors,Specialty Bike Shop,AW00000441,441
+M4B 1V5,Canada,Ontario,Toronto,Original Bicycle Supply Company,Warehouse,AW00000442,442
+L4E 3M5,Canada,Ontario,Richmond Hill,Courteous Bicycle Specialists,Value Added Reseller,AW00000443,443
+T2P 2G8,Canada,Alberta,Calgary,Finer Cycle Shop,Specialty Bike Shop,AW00000444,444
+93500,France,Seine Saint Denis,Pantin,First Center,Warehouse,AW00000445,445
+14111,Germany,Hamburg,Berlin,Fitness Toys,Value Added Reseller,AW00000446,446
+2777,Australia,New South Wales,Springwood,Cross-town Parts Shop,Specialty Bike Shop,AW00000447,447
+WA1 4SY,United Kingdom,England,Woolston,Action Bicycle Specialists,Warehouse,AW00000448,448
+23451,United States,Virginia,Virginia Beach,Bike Products and Accessories,Value Added Reseller,AW00000449,449
+1906,United States,Massachusetts,Saugus,Bikes Anyone?,Specialty Bike Shop,AW00000450,450
+97504,United States,Oregon,Medford,Roadway Bike Emporium,Warehouse,AW00000451,451
+97321,United States,Oregon,Albany,A Cycle Shop,Value Added Reseller,AW00000452,452
+53202,United States,Wisconsin,Milwaukee,Unique Bikes,Specialty Bike Shop,AW00000453,453
+57716,United States,South Dakota,Denby,Sleek Bikes,Warehouse,AW00000454,454
+91901,United States,California,Alpine,Timely Shipping Service,Value Added Reseller,AW00000455,455
+92614,United States,California,Irvine,Riding Excursions,Specialty Bike Shop,AW00000456,456
+85201,United States,Arizona,Mesa,Retail Sporting Equipment,Warehouse,AW00000457,457
+32541,United States,Florida,Destin,Simple Bike Parts,Value Added Reseller,AW00000458,458
+30240,United States,Georgia,La Grange,Parts Shop,Specialty Bike Shop,AW00000459,459
+J4Z 1C5,Canada,Quebec,Brossard,Price-Cutter Discount Bikes,Warehouse,AW00000460,460
+L5B 3V4,Canada,Ontario,Mississauga,Active Life Toys,Value Added Reseller,AW00000461,461
+V6B 3P7,Canada,British Columbia,Richmond,General Riding Supplies,Specialty Bike Shop,AW00000462,462
+91940,France,Essonne,Les Ulis,Brand New Bikes,Warehouse,AW00000463,463
+66001,Germany,Saarland,Saarbrücken,Educational Services,Value Added Reseller,AW00000464,464
+2065,Australia,New South Wales,St. Leonards,Expert Cycle Store,Specialty Bike Shop,AW00000465,465
+SL67RJ,United Kingdom,England,Maidenhead,Central Bicycle Specialists,Warehouse,AW00000466,466
+22046,United States,Virginia,Falls Church,The Cycle Store,Value Added Reseller,AW00000467,467
+98272,United States,Michigan,Monroe,Blue Bicycle Company,Specialty Bike Shop,AW00000468,468
+98532,United States,Washington,Chehalis,Vast Bike Sales and Rental,Warehouse,AW00000469,469
+99337,United States,Washington,Kennewick,Wingtip Toys,Value Added Reseller,AW00000470,470
+78204,United States,Texas,San Antonio,Social Activities Club,Specialty Bike Shop,AW00000471,471
+60706,United States,Illinois,Norridge,Summer Sports Place,Warehouse,AW00000472,472
+85004,United States,Arizona,Phoenix,Racing Toys,Value Added Reseller,AW00000473,473
+95501,United States,California,Eureka,Retail Cycle Shop,Specialty Bike Shop,AW00000474,474
+85004,United States,Arizona,Phoenix,Real Sporting Goods,Warehouse,AW00000475,475
+31901,United States,Georgia,Columbus,Noiseless Gear Company,Value Added Reseller,AW00000476,476
+33602,United States,Florida,Tampa,Quitting Business Distributors,Specialty Bike Shop,AW00000477,477
+V6B 3P7,Canada,British Columbia,Richmond,Major Cycling,Warehouse,AW00000478,478
+J1G 2R3,Canada,Quebec,Ville Deanjou,General Supplies,Value Added Reseller,AW00000479,479
+L5B 3V4,Canada,Ontario,Mississauga,General Bike Corporation,Specialty Bike Shop,AW00000480,480
+41100,France,Loir et Cher,Saint Ouen,Getaway Inn,Warehouse,AW00000481,481
+4838,Germany,Brandenburg,Eilenburg,Fabrikam Inc. East,Value Added Reseller,AW00000482,482
+2138,Australia,New South Wales,Rhodes,Fitness Bike Accessories,Specialty Bike Shop,AW00000483,483
+SL4 1RH,United Kingdom,England,Berks,Downhill Bicycle Specialists,Warehouse,AW00000484,484
+20176,United States,Virginia,Leesburg,Clamps & Brackets Co.,Value Added Reseller,AW00000485,485
+2184,United States,Massachusetts,Braintree,Convenient Bike Shop,Specialty Bike Shop,AW00000486,486
+97301,United States,Oregon,Salem,Bike Experts,Warehouse,AW00000487,487
+83501,United States,Idaho,Lewiston,Bicycle Accessories and Kits,Value Added Reseller,AW00000488,488
+78613,United States,Texas,Cedar Park,Cash & Carry Bikes,Specialty Bike Shop,AW00000489,489
+75149,United States,Texas,Mesquite,Extraordinary Bike Works,Warehouse,AW00000490,490
+95354,United States,California,Modesto,Area Bike Accessories,Value Added Reseller,AW00000491,491
+91706,United States,California,Baldwin Park,Basic Sports Equipment,Specialty Bike Shop,AW00000492,492
+95610,United States,California,Citrus Heights,Valley Bicycle Distributors,Warehouse,AW00000493,493
+33127,United States,Florida,Miami,Worthwhile Activity Store,Value Added Reseller,AW00000494,494
+33801,United States,Florida,Lakeland,Tough and Reliable Parts,Specialty Bike Shop,AW00000495,495
+T5,Canada,Alberta,Edmonton,Top Sports Supply,Warehouse,AW00000496,496
+V6B 3P7,Canada,British Columbia,Richmond,Valley Toy Store,Value Added Reseller,AW00000497,497
+L5B 3V4,Canada,Ontario,Mississauga,Quick Delivery Service,Specialty Bike Shop,AW00000498,498
+45000,France,Loiret,Orleans,Racing Sales and Service,Warehouse,AW00000499,499
+1071,Germany,Hessen,Dresden,Irregulars Outlet,Value Added Reseller,AW00000500,500
+2036,Australia,New South Wales,Malabar,Jumbo Bikes,Specialty Bike Shop,AW00000501,501
+W1N 9FA,United Kingdom,England,London,Metropolitan Bicycle Supply,Warehouse,AW00000502,502
+3106,United States,New Hampshire,Hooksett,Metropolitan Sales and Rental,Value Added Reseller,AW00000503,503
+48239,United States,Michigan,Redford,Historic Bicycle Sales,Specialty Bike Shop,AW00000504,504
+98626,United States,Washington,Kelso,Honest Repair Service,Warehouse,AW00000505,505
+82601,United States,Wyoming,Casper,Great Bikes,Value Added Reseller,AW00000506,506
+77477,United States,Texas,Stafford,Global Sporting Goods,Specialty Bike Shop,AW00000507,507
+76645,United States,Texas,Hillsboro,Designer Department Stores,Warehouse,AW00000508,508
+85701,United States,Arizona,Tucson,Fun Toys and Bikes,Value Added Reseller,AW00000509,509
+92679,United States,California,Trabuco Canyon,World Bike Discount Store,Specialty Bike Shop,AW00000510,510
+94404,United States,California,San Mateo,Wheel Gallery,Warehouse,AW00000511,511
+37203,United States,Tennessee,Nashville,Tiny Bike Boutique,Value Added Reseller,AW00000512,512
+41071,United States,Kentucky,Newport,Village Tours,Specialty Bike Shop,AW00000513,513
+V6B 3P7,Canada,British Columbia,Richmond,Retail Mall,Warehouse,AW00000514,514
+M4C 4K6,Canada,Ontario,North York,Rural Bicycle Supply,Value Added Reseller,AW00000515,515
+7L,Canada,Ontario,Kingston,Seats and Saddles Company,Specialty Bike Shop,AW00000516,516
+91940,France,Essonne,Les Ulis,Racing Store,Warehouse,AW00000517,517
+14111,Germany,Hessen,Berlin,Regional Cycle Shop,Value Added Reseller,AW00000518,518
+3000,Australia,Victoria,Melbourne,List Price Catalog Company,Specialty Bike Shop,AW00000519,519
+W10 6BL,United Kingdom,England,London,Metro Metals Co.,Warehouse,AW00000520,520
+2895,United States,Rhode Island,Woonsocket,Mobile Outlet,Value Added Reseller,AW00000521,521
+14227,United States,New York,Cheektowaga,Small Bike Accessories Shop,Specialty Bike Shop,AW00000522,522
+80501,United States,Colorado,Longmont,Futuristic Sport Distributors,Warehouse,AW00000523,523
+27577,United States,North Carolina,Smithfield,Chain and Chain Tool Distributions,Value Added Reseller,AW00000524,524
+31008,United States,Georgia,Byron,Cycles and Scooters,Specialty Bike Shop,AW00000525,525
+K4B 1S2,Canada,Ontario,Ottawa,Finer Sales and Service,Warehouse,AW00000526,526
+80138,United States,Colorado,Parker,Fun Times Club,Value Added Reseller,AW00000527,527
+95624,United States,California,Elk Grove,Alpine Ski House,Specialty Bike Shop,AW00000528,528
+93010,United States,California,Camarillo,Big-Time Bike Store,Warehouse,AW00000529,529
+32804,United States,Florida,Orlando,Valuable Bike Parts Company,Value Added Reseller,AW00000530,530
+32960,United States,Florida,Vero Beach,Sunny Place Bikes,Specialty Bike Shop,AW00000531,531
+K2L 1H5,Canada,Ontario,Kanata,The Showroom,Warehouse,AW00000532,532
+G1T,Canada,Quebec,Sillery,Tenth Bike Store,Value Added Reseller,AW00000533,533
+L5B 3V4,Canada,Ontario,Mississauga,Recommended Bicycles,Specialty Bike Shop,AW00000534,534
+95000,France,Val dOise,Cergy,Spa and Exercise Outfitters,Warehouse,AW00000535,535
+14197,Germany,Saarland,Berlin,Next Door Cycles,Value Added Reseller,AW00000536,536
+2138,Australia,New South Wales,Rhodes,Preferable Bikes,Specialty Bike Shop,AW00000537,537
+E17 6JF,United Kingdom,England,London,Prosperous Tours,Warehouse,AW00000538,538
+12845,United States,New York,Lake George,Glossy Bikes,Value Added Reseller,AW00000539,539
+44214,United States,Ohio,Burbank,Guaranteed Sales and Service,Specialty Bike Shop,AW00000540,540
+59401,United States,Montana,Great Falls,Nonskid Tire Company,Warehouse,AW00000541,541
+98033,United States,Washington,Kirkland,Finer Parts Shop,Value Added Reseller,AW00000542,542
+53038,United States,Wisconsin,Johnson Creek,Friendly Neighborhood Bikes,Specialty Bike Shop,AW00000543,543
+64106,United States,Missouri,Kansas City,Valley Bicycle Specialists,Warehouse,AW00000544,544
+94066,United States,California,San Bruno,Finish and Sealant Products,Value Added Reseller,AW00000545,545
+80537,United States,Colorado,Loveland,Field Trip Store,Value Added Reseller,AW00000546,546
+94596,United States,California,Walnut Creek,Curbside Sporting Goods,Specialty Bike Shop,AW00000547,547
+29910,United States,South Carolina,Bluffton,New Bikes Company,Warehouse,AW00000548,548
+33755,United States,Florida,Clearwater,Daring Rides,Value Added Reseller,AW00000549,549
+G1R,Canada,Quebec,Quebec,Remote Bicycle Specialists,Specialty Bike Shop,AW00000550,550
+M4B 1V5,Canada,Ontario,Toronto,Vinyl and Plastic Goods Corporation,Warehouse,AW00000551,551
+M4B 1V5,Canada,Ontario,Toronto,Consolidated Messenger,Value Added Reseller,AW00000552,552
+75008,France,Seine (Paris),Paris,Accessories Network,Specialty Bike Shop,AW00000553,553
+33041,Germany,Hamburg,Paderborn,Top of the Line Bikes,Warehouse,AW00000554,554
+2010,Australia,New South Wales,Darlinghurst,Twin Cycles,Value Added Reseller,AW00000555,555
+W1X3SE,United Kingdom,England,London,Variety Cycling,Specialty Bike Shop,AW00000556,556
+2093,United States,Massachusetts,Wrentham,Purchase Mart,Warehouse,AW00000557,557
+3276,United States,New Hampshire,Tilton,Retail Sales and Service,Value Added Reseller,AW00000558,558
+82001,United States,Wyoming,Cheyenne,Some Discount Store,Specialty Bike Shop,AW00000559,559
+82901,United States,Wyoming,Rock Springs,Major Sport Suppliers,Warehouse,AW00000560,560
+77478,United States,Texas,Sugar Land,Mountain Toy Store,Value Added Reseller,AW00000561,561
+55125,United States,Minnesota,Woodbury,Practical Bike Supply Company,Specialty Bike Shop,AW00000562,562
+85233,United States,Arizona,Gilbert,Systematic Sales,Warehouse,AW00000563,563
+89030,United States,Nevada,North Las Vegas,Imported and Domestic Cycles,Value Added Reseller,AW00000564,564
+92084,United States,California,Vista,Metallic Paint and Overcoat Co,Specialty Bike Shop,AW00000565,565
+39501,United States,Mississippi,Gulfport,eCommerce Bikes,Warehouse,AW00000566,566
+37863,United States,Tennessee,Pigeon Forge,Global Plaza,Value Added Reseller,AW00000567,567
+M4B 1V5,Canada,Ontario,Toronto,Economy Center,Specialty Bike Shop,AW00000568,568
+K2J 2W5,Canada,Ontario,Nepean,Designated Distributors,Warehouse,AW00000569,569
+H1Y 2H5,Canada,Quebec,Montreal,Familys Favorite Bike Shop,Value Added Reseller,AW00000570,570
+62200,France,Pas de Calais,Boulogne-sur-Mer,Community Department Stores,Specialty Bike Shop,AW00000571,571
+38001,Germany,Nordrhein-Westfalen,Braunschweig,Versatile Sporting Goods Company,Warehouse,AW00000572,572
+2138,Australia,New South Wales,Rhodes,Nationwide Supply,Value Added Reseller,AW00000573,573
+EC1R 0DU,United Kingdom,England,London,Area Sheet Metal Supply,Specialty Bike Shop,AW00000574,574
+45202,United States,Ohio,Cincinnati,Bicycle Outfitters,Warehouse,AW00000575,575
+44903,United States,Ohio,Mansfield,The Bike Mechanics,Value Added Reseller,AW00000576,576
+98403,United States,Washington,Tacoma,Synthetic Materials Manufacturing,Specialty Bike Shop,AW00000577,577
+98371,United States,Washington,Puyallup,The Bike Shop,Warehouse,AW00000578,578
+55056,United States,Minnesota,Branch,Riders Company,Value Added Reseller,AW00000579,579
+78204,United States,Texas,San Antonio,Rural Sales and Service,Specialty Bike Shop,AW00000580,580
+87124,United States,New Mexico,Rio Rancho,Safe Toys,Warehouse,AW00000581,581
+91411,United States,California,Van Nuys,Professional Sales and Service,Value Added Reseller,AW00000582,582
+85374,United States,Arizona,Surprise,Professional Containers and Packaging Co.,Specialty Bike Shop,AW00000583,583
+31401,United States,Georgia,Savannah,Qualified Sales and Repair Services,Warehouse,AW00000584,584
+38103,United States,Tennessee,Memphis,Next-Door Bike Store,Value Added Reseller,AW00000585,585
+H1Y 2H7,Canada,Quebec,Montreal,One Bike Company,Specialty Bike Shop,AW00000586,586
+K4B 1S3,Canada,Ontario,Ottawa,Our Sporting Goods Store,Warehouse,AW00000587,587
+V5G 4W1,Canada,British Columbia,Burnaby,General Cycle Storehouse,Value Added Reseller,AW00000588,588
+75009,France,Seine (Paris),Paris,Hiatus Bike Tours,Specialty Bike Shop,AW00000589,589
+66041,Germany,Saarland,Poing,Lustrous Paints and Components,Warehouse,AW00000590,590
+3000,Australia,Victoria,Melbourne,Fitness Discount Store,Value Added Reseller,AW00000591,591
+SW8 1XD,United Kingdom,England,London,Cycling Goods,Specialty Bike Shop,AW00000592,592
+43528,United States,Ohio,Holland,Expert Sports Store,Warehouse,AW00000593,593
+3064,United States,New Hampshire,Nashua,Casual Bicycle Store,Value Added Reseller,AW00000594,594
+97321,United States,Oregon,Albany,Cycle Clearance,Specialty Bike Shop,AW00000595,595
+98201,United States,Washington,Everett,Coho Sports,Warehouse,AW00000596,596
+77003,United States,Texas,Houston,All Seasons Sports Supply,Value Added Reseller,AW00000597,597
+65616,United States,Missouri,Branson,Black Bicycle Company,Specialty Bike Shop,AW00000598,598
+93955,United States,California,Sand City,Westside Plaza,Warehouse,AW00000599,599
+90650,United States,California,Norwalk,Strenuous Exercise Shop,Value Added Reseller,AW00000600,600
+84070,United States,Utah,Sandy,Transport Bikes,Specialty Bike Shop,AW00000601,601
+37801,United States,Tennessee,Maryville,Ultimate Bike Shop,Warehouse,AW00000602,602
+33127,United States,Florida,Miami,Retail Toy Store,Value Added Reseller,AW00000603,603
+97015,United States,Oregon,Clackamas,Sellers of Cycles,Specialty Bike Shop,AW00000604,604
+99202,United States,Washington,Spokane,Outstanding Cycles,Warehouse,AW00000605,605
+54455,United States,Wisconsin,Mosinee,Little Bicycle Supply Shop,Value Added Reseller,AW00000606,606
+77568,United States,Texas,La Marque,Maintenance and Repair for Bicycles,Specialty Bike Shop,AW00000607,607
+91941,United States,California,La Mesa,Golf and Cycle Store,Warehouse,AW00000608,608
+95603,United States,California,Auburn,Good Toys,Value Added Reseller,AW00000609,609
+85257,United States,Arizona,Scottsdale,Fitness Department Stores,Specialty Bike Shop,AW00000610,610
+34205,United States,Florida,Bradenton,Front Runner Bikes,Warehouse,AW00000611,611
+33021,United States,Florida,Hollywood,General Associates,Value Added Reseller,AW00000612,612
+V5T 1Y9,Canada,Ontario,Vancouver,Famous Bike Shop,Specialty Bike Shop,AW00000613,613
+75017,France,Seine (Paris),Paris,Favorite Toy Distributor,Warehouse,AW00000614,614
+4139,Germany,Nordrhein-Westfalen,Leipzig,Fast Services,Value Added Reseller,AW00000615,615
+2036,Australia,New South Wales,Matraville,Eastward Bike Accessories,Specialty Bike Shop,AW00000616,616
+OX14 4SE,United Kingdom,England,Oxford,Tubeless Tire Company,Warehouse,AW00000617,617
+3865,United States,New Hampshire,Plaistow,Seventh Bike Store,Value Added Reseller,AW00000618,618
+14850,United States,New York,Ithaca,Strong Metal Manufacturing,Specialty Bike Shop,AW00000619,619
+82001,United States,Wyoming,Cheyenne,Tires and Tubes,Warehouse,AW00000620,620
+98225,United States,Washington,Bellingham,Running and Cycling Gear,Value Added Reseller,AW00000621,621
+61953,United States,Illinois,Tuscola,Gift and Toy Store,Specialty Bike Shop,AW00000622,622
+55402,United States,Minnesota,Minneapolis,Hardware Components,Warehouse,AW00000623,623
+85257,United States,Arizona,Scottsdale,First Cycle Store,Value Added Reseller,AW00000624,624
+85225,United States,Arizona,Chandler,Major Sporting Goods,Specialty Bike Shop,AW00000625,625
+89106,United States,Nevada,Las Vegas,Retail Sporting Goods,Warehouse,AW00000626,626
+27603,United States,North Carolina,Raleigh,Exchange Parts Inc.,Value Added Reseller,AW00000627,627
+33127,United States,Florida,Miami,Executive Discount Store,Specialty Bike Shop,AW00000628,628
+T2P 2G8,Canada,Alberta,Calgary,Efficient Cycling,Warehouse,AW00000629,629
+M4B 1V4,Canada,Ontario,Toronto,Eastside Parts Shop,Value Added Reseller,AW00000630,630
+M4B 1V4,Canada,Ontario,Toronto,Tandem Sales and Service,Specialty Bike Shop,AW00000631,631
+91420,France,Essonne,Morangis,Ultimate Bicycle Company,Warehouse,AW00000632,632
+86150,Germany,Bayern,Augsburg,Rustic Bike Store,Value Added Reseller,AW00000633,633
+2138,Australia,New South Wales,Rhodes,Sensible Sports,Specialty Bike Shop,AW00000634,634
+CB4 4BZ,United Kingdom,England,Cambridge,Sports Store,Warehouse,AW00000635,635
+46947,United States,Indiana,Logansport,Recreation Systems,Value Added Reseller,AW00000636,636
+M4B 1V4,Canada,Ontario,Toronto,Reliable Retail Center,Specialty Bike Shop,AW00000637,637
+75012,France,Seine (Paris),Paris,Metropolitan Equipment,Warehouse,AW00000638,638
+91480,Germany,Bayern,Frankfurt,Producer Goods Clearinghouse,Value Added Reseller,AW00000639,639
+6006,Australia,South Australia,Perth,Liquidation Sales,Specialty Bike Shop,AW00000640,640
+SW8 4BG,United Kingdom,England,London,Extended Tours,Warehouse,AW00000641,641
+3904,United States,Maine,Kittery,Fitness Sport Boutique,Value Added Reseller,AW00000642,642
+48060,United States,Michigan,Port Huron,Friendly Bike Shop,Specialty Bike Shop,AW00000643,643
+97477,United States,Oregon,Springfield,Convenient Sales and Service,Warehouse,AW00000644,644
+97005,United States,Oregon,Beaverton,Superior Hardware Distributors,Value Added Reseller,AW00000645,645
+63103,United States,Missouri,Saint Louis,Yellow Bicycle Company,Specialty Bike Shop,AW00000646,646
+76010,United States,Texas,Arlington,Solid Bike Parts,Warehouse,AW00000647,647
+90245,United States,California,El Segundo,Small Bike Shop,Value Added Reseller,AW00000648,648
+92701,United States,California,Santa Ana,Sports Products Store,Specialty Bike Shop,AW00000649,649
+89502,United States,Nevada,Reno,Permanent Finish Products,Warehouse,AW00000650,650
+30901,United States,Georgia,Augusta,Retread Tire Company,Value Added Reseller,AW00000651,651
+30060,United States,Georgia,Marietta,Selected Distributors,Specialty Bike Shop,AW00000652,652
+M4B 1V4,Canada,Ontario,Toronto,Mercantile Outlet,Warehouse,AW00000653,653
+L4G 7N6,Canada,Ontario,Aurora,Online Bike Warehouse,Value Added Reseller,AW00000654,654
+H9P 1H1,Canada,Quebec,Dorval,Operational Manufacturing,Value Added Reseller,AW00000655,655
+75007,France,Seine (Paris),Paris,Impervious Paint Company,Specialty Bike Shop,AW00000656,656
+86171,Germany,Hamburg,Ascheim,Links Works,Warehouse,AW00000657,657
+2015,Australia,New South Wales,Alexandria,Mass Market Bikes,Value Added Reseller,AW00000658,658
+SW19 3RU,United Kingdom,England,London,Shipping Specialists,Specialty Bike Shop,AW00000659,659
+48843,United States,Michigan,Howell,Exhilarating Cycles,Warehouse,AW00000660,660
+T2P 2G8,Canada,Alberta,Calgary,General Department Stores,Value Added Reseller,AW00000661,661
+59170,France,Nord,Croix,Finer Sporting Goods,Specialty Bike Shop,AW00000662,662
+86171,Germany,Hamburg,Augsburg,Capital Riding Supplies,Warehouse,AW00000663,663
+3000,Australia,Victoria,Melbourne,Eastside Cycle Shop,Value Added Reseller,AW00000664,664
+W1V 5RN,United Kingdom,England,London,Authentic Sales and Service,Specialty Bike Shop,AW00000665,665
+43215,United States,Ohio,Columbus,Bike Boutique,Warehouse,AW00000666,666
+11580,United States,New York,Valley Stream,Traditional Department Stores,Value Added Reseller,AW00000667,667
+98626,United States,Washington,Kelso,Official Parts Shop,Specialty Bike Shop,AW00000668,668
+98003,United States,Washington,Federal Way,Racing Bike Outlet,Warehouse,AW00000669,669
+64076,United States,Missouri,Odessa,First Bike Store,Value Added Reseller,AW00000670,670
+78204,United States,Texas,San Antonio,Contoso Ltd.,Specialty Bike Shop,AW00000671,671
+84401,United States,Utah,Ogden,Utilitarian Sporting Goods,Warehouse,AW00000672,672
+84010,United States,Utah,Bountiful,Countryside Company,Value Added Reseller,AW00000673,673
+94015,United States,California,Daly City,Discount Tours,Specialty Bike Shop,AW00000674,674
+33162,United States,Florida,North Miami Beach,Bike Goods,Warehouse,AW00000675,675
+30106,United States,Georgia,Austell,Better Bike Shop,Value Added Reseller,AW00000676,676
+K4B 1S2,Canada,Ontario,Ottawa,Tire Exchange,Specialty Bike Shop,AW00000677,677
+M4B 1V4,Canada,Ontario,Toronto,Vigorous Exercise Company,Warehouse,AW00000678,678
+H1Y 2H3,Canada,Quebec,Montreal,Superb Sales and Repair,Value Added Reseller,AW00000679,679
+92310,France,Hauts de Seine,Sèvres,Racing Tours,Specialty Bike Shop,AW00000680,680
+66272,Germany,Saarland,Sulzbach Taunus,Showcase for Cycles,Warehouse,AW00000681,681
+2300,Australia,New South Wales,Newcastle,Popular Bike Lines,Value Added Reseller,AW00000682,682
+W1Y 3RA,United Kingdom,England,London,Oils and Fluids Warehouse,Specialty Bike Shop,AW00000683,683
+6460,United States,Connecticut,Milford,Lease-a-Bike Shop,Warehouse,AW00000684,684
+H1Y 2H8,Canada,Quebec,Montreal,Family Cycle Store,Value Added Reseller,AW00000685,685
+92150,France,Hauts de Seine,Suresnes,Finished Parts Shop,Specialty Bike Shop,AW00000686,686
+80074,Germany,Nordrhein-Westfalen,München,Functional Store South,Warehouse,AW00000687,687
+1002,Australia,New South Wales,Sydney,Bike Part Wholesalers,Value Added Reseller,AW00000688,688
+SW1P 2NU,United Kingdom,England,London,Consumer Equipment,Specialty Bike Shop,AW00000689,689
+43056,United States,Ohio,Heath,Active Cycling,Warehouse,AW00000690,690
+6510,United States,Connecticut,New Haven,Mountain Bike Store,Value Added Reseller,AW00000691,691
+97223,United States,Oregon,Tigard,Successful Sales Company,Specialty Bike Shop,AW00000692,692
+97123,United States,Oregon,Hillsboro,Stock Parts and Supplies,Warehouse,AW00000693,693
+55049,United States,Minnesota,Medford,The Accessories Store,Value Added Reseller,AW00000694,694
+64106,United States,Missouri,Kansas City,Responsible Bike Dealers,Specialty Bike Shop,AW00000695,695
+84065,United States,Utah,Riverton,Roadway Supplies,Warehouse,AW00000696,696
+84074,United States,Utah,Tooele,Brakes and Gears,Value Added Reseller,AW00000697,697
+84720,United States,Utah,Cedar City,Western Bike Supplies,Specialty Bike Shop,AW00000698,698
+28081,United States,North Carolina,Kannapolis,Sensational Discount Store,Warehouse,AW00000699,699
+28202,United States,North Carolina,Charlotte,Underglaze and Finish Company,Value Added Reseller,AW00000700,700
+T2P 2G8,Canada,Alberta,Calgary,Future Bikes,Warehouse,AW00000701,701

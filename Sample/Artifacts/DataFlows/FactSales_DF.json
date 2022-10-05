@@ -1,0 +1,60 @@
+{
+    "name": "FactSales_DF",
+    "properties": {
+        "folder": {
+            "name": "adworkstarget"
+        },
+        "type": "MappingDataFlow",
+        "typeProperties": {
+            "sources": [
+                {
+                    "name": "DimCustomerSource"
+                },
+                {
+                    "name": "DimChannelSource"
+                },
+                {
+                    "name": "DimProductSource"
+                },
+                {
+                    "name": "DimDateSource"
+                }
+            ],
+            "sinks": [
+                {
+                    "name": "InternetCustomerSink"
+                }
+            ],
+            "transformations": [
+                {
+                    "name": "InternetCustomerSelect"
+                },
+                {
+                    "name": "DimChannelSelect"
+                },
+                {
+                    "name": "DimProductSelect"
+                },
+                {
+                    "name": "split1"
+                },
+                {
+                    "name": "ChannelType"
+                },
+                {
+                    "name": "DimCustomerSourceSplitSelect"
+                },
+                {
+                    "name": "ResellerCustomerSelect"
+                },
+                {
+                    "name": "DimDateSelect"
+                },
+                {
+                    "name": "filter1"
+                }
+            ],
+            "script": "source(output(\n\t\tCustomerId as string,\n\t\tCustomer as string,\n\t\tChannelKey as long,\n\t\tGeographyKey as long,\n\t\tCustomerKey as long\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tstore: 'synapse',\n\tdatabaseType: 'spark',\n\tformat: 'table',\n\tdatabase: 'adworkstarget',\n\ttableName: 'DimCustomer',\n\tmanifestType: 'manifest') ~> DimCustomerSource\nsource(output(\n\t\tChannel as string,\n\t\tChannelCategory as string,\n\t\tChannelKey as long\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tlimit: 10,\n\tstore: 'synapse',\n\tdatabaseType: 'spark',\n\tformat: 'table',\n\tdatabase: 'adworkstarget',\n\ttableName: 'DimChannel') ~> DimChannelSource\nsource(output(\n\t\tProductId as short,\n\t\tCategory as string,\n\t\tSubcategory as string,\n\t\tModel as string,\n\t\tListPrice as double,\n\t\tColor as string,\n\t\tStandardCost as double,\n\t\tProduct as string,\n\t\tSKU as string,\n\t\tProductKey as long\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tstore: 'synapse',\n\tdatabaseType: 'spark',\n\tformat: 'table',\n\tdatabase: 'adworkstarget',\n\ttableName: 'DimProduct') ~> DimProductSource\nsource(output(\n\t\tDateKey as date,\n\t\tDate as date,\n\t\tFiscalYear as string,\n\t\tFiscalQuarter as string,\n\t\tMonth as string,\n\t\tFullDate as string,\n\t\tMonthKey as integer,\n\t\tDateKeyAltered as integer\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tstore: 'synapse',\n\tdatabaseType: 'spark',\n\tformat: 'table',\n\tdatabase: 'adworkstarget',\n\ttableName: 'DimDate') ~> DimDateSource\nsplit1@InternetCustomers select(mapColumn(\n\t\tCustomerId_lookup = CustomerId,\n\t\tCustomerKey,\n\t\tChannelKey,\n\t\tChannelCategory,\n\t\tGeographyKey\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> InternetCustomerSelect\nDimChannelSource select(mapColumn(\n\t\tChannel_lookup = Channel,\n\t\tChannelKey,\n\t\tChannelCategory\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> DimChannelSelect\nDimProductSource select(mapColumn(\n\t\tProductId,\n\t\tProductKey\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> DimProductSelect\nDimCustomerSourceSplitSelect split(ChannelCategory=='Internet',\n\tdisjoint: false) ~> split1@(InternetCustomers, ResellerCustomers)\nfilter1, DimChannelSelect lookup(DimCustomerSource@ChannelKey == DimChannelSelect@ChannelKey,\n\tmultiple: false,\n\tpickup: 'any',\n\tbroadcast: 'auto')~> ChannelType\nChannelType select(mapColumn(\n\t\tCustomerId,\n\t\tCustomerKey,\n\t\tChannelKey = DimChannelSelect@ChannelKey,\n\t\tChannelCategory,\n\t\tGeographyKey\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> DimCustomerSourceSplitSelect\nsplit1@ResellerCustomers select(mapColumn(\n\t\tResellerId_lookup = CustomerId,\n\t\tCustomerKey,\n\t\tChannelKey,\n\t\tChannelCategory,\n\t\tGeographyKey\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> ResellerCustomerSelect\nDimDateSource select(mapColumn(\n\t\tDate_lookup = DateKeyAltered,\n\t\tDateKey = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> DimDateSelect\nDimCustomerSource filter(contains(array(toString(columns())),!isNull(ChannelKey))) ~> filter1\nInternetCustomerSelect sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tstore: 'synapse',\n\tdatabaseType: 'spark',\n\tformat: 'table',\n\tdatabase: 'adworkstarget',\n\ttableName: 'DimInternetCustomer') ~> InternetCustomerSink"
+        }
+    }
+}

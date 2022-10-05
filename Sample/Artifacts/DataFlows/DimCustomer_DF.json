@@ -1,0 +1,75 @@
+{
+	"name": "DimCustomer_DF",
+	"properties": {
+		"folder": {
+			"name": "adworkstarget"
+		},
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "InternetCustomerSource"
+				},
+				{
+					"name": "ResellerCustomerSource"
+				},
+				{
+					"name": "DimGeography"
+				},
+				{
+					"name": "DimChannelSource"
+				}
+			],
+			"sinks": [
+				{
+					"name": "DimCustomerSink"
+				}
+			],
+			"transformations": [
+				{
+					"name": "DeduplicatedInternerCustomer"
+				},
+				{
+					"name": "SurrogateKey"
+				},
+				{
+					"name": "DeduplicatedResellerCustomer"
+				},
+				{
+					"name": "InternetCustomerSelect"
+				},
+				{
+					"name": "ResellerCustomerSelect"
+				},
+				{
+					"name": "ChannelDerivedCol"
+				},
+				{
+					"name": "CustomerUnion"
+				},
+				{
+					"name": "GeographyKeyLookup"
+				},
+				{
+					"name": "DimGeographySort"
+				},
+				{
+					"name": "CustomerGeograpySort"
+				},
+				{
+					"name": "DimGeographySelect"
+				},
+				{
+					"name": "DimChannelSelect"
+				},
+				{
+					"name": "ChannelKeyLookup"
+				},
+				{
+					"name": "CustomerSelect"
+				}
+			],
+			"script": "source(output(\n\t\tCustomerId as string,\n\t\tCustomer as string,\n\t\tCity as string,\n\t\tStateProvince as string,\n\t\tPostalCode as string,\n\t\tCountryRegion as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tstore: 'synapse',\n\tdatabaseType: 'spark',\n\tformat: 'table',\n\tdatabase: 'adworks',\n\ttableName: 'CustomerData',\n\tmanifestType: 'manifest') ~> InternetCustomerSource\nsource(output(\n\t\tPostalCode as string,\n\t\tCountryRegion as string,\n\t\tStateProvince as string,\n\t\tCity as string,\n\t\tReseller as string,\n\t\tBusinessType as string,\n\t\tResellerId as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tstore: 'synapse',\n\tdatabaseType: 'spark',\n\tformat: 'table',\n\tdatabase: 'adworks',\n\ttableName: 'Reseller') ~> ResellerCustomerSource\nsource(output(\n\t\tCity as string,\n\t\tStateProvince as string,\n\t\tPostalCode as string,\n\t\tCountryRegion as string,\n\t\tGeographyKey as long\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tstore: 'synapse',\n\tdatabaseType: 'spark',\n\tformat: 'table',\n\tdatabase: 'adworkstarget',\n\ttableName: 'DimGeography') ~> DimGeography\nsource(output(\n\t\tChannel as string,\n\t\tChannelCategory as string,\n\t\tChannelKey as long\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tstore: 'synapse',\n\tdatabaseType: 'spark',\n\tformat: 'table',\n\tdatabase: 'adworkstarget',\n\ttableName: 'DimChannel') ~> DimChannelSource\nInternetCustomerSource aggregate(groupBy(CustomerId),\n\tPostalCode_last = last(PostalCode),\n\t\tCountryRegion_last = last(CountryRegion),\n\t\tStateProvince_last = last(StateProvince),\n\t\tCity_last = last(City),\n\t\tCustomer_last = last(Customer)) ~> DeduplicatedInternerCustomer\nCustomerSelect keyGenerate(output(CustomerKey as long),\n\tstartAt: 1L,\n\tstepValue: 1L) ~> SurrogateKey\nResellerCustomerSource aggregate(groupBy(ResellerId),\n\tPostalCode_first = first(PostalCode),\n\t\tCountryRegion_first = first(CountryRegion),\n\t\tStateProvince_first = first(StateProvince),\n\t\tCity_first = first(City),\n\t\tBusinessType_first = first(BusinessType),\n\t\tReseller_first = first(Reseller)) ~> DeduplicatedResellerCustomer\nChannelDerivedCol select(mapColumn(\n\t\tCustomerId,\n\t\tPostalCode = PostalCode_last,\n\t\tCountryRegion = CountryRegion_last,\n\t\tStateProvince = StateProvince_last,\n\t\tCity = City_last,\n\t\tCustomer = Customer_last,\n\t\tChannel\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> InternetCustomerSelect\nDeduplicatedResellerCustomer select(mapColumn(\n\t\tCustomerId = ResellerId,\n\t\tPostalCode = PostalCode_first,\n\t\tCountryRegion = CountryRegion_first,\n\t\tStateProvince = StateProvince_first,\n\t\tCity = City_first,\n\t\tChannel = BusinessType_first,\n\t\tCustomer = Reseller_first\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> ResellerCustomerSelect\nDeduplicatedInternerCustomer derive(Channel = 'Internet') ~> ChannelDerivedCol\nInternetCustomerSelect, ResellerCustomerSelect union(byName: true)~> CustomerUnion\nCustomerGeograpySort, DimGeographySort lookup(CountryRegion == CountryRegion_lookup\n\t&& StateProvince == StateProvince_lookup\n\t&& City == City_lookup\n\t&& PostalCode == PostalCode_lookup,\n\tmultiple: false,\n\tpickup: 'last',\n\tasc(CountryRegion_lookup, true),\n\tasc(StateProvince_lookup, true),\n\tasc(City_lookup, true),\n\tasc(PostalCode_lookup, true),\n\tbroadcast: 'auto')~> GeographyKeyLookup\nDimGeographySelect sort(asc(CountryRegion_lookup, true),\n\tasc(StateProvince_lookup, true),\n\tasc(City_lookup, true),\n\tasc(PostalCode_lookup, true)) ~> DimGeographySort\nCustomerUnion sort(asc(CountryRegion, true),\n\tasc(StateProvince, true),\n\tasc(City, true),\n\tasc(PostalCode, true)) ~> CustomerGeograpySort\nDimGeography select(mapColumn(\n\t\tCity_lookup = City,\n\t\tStateProvince_lookup = StateProvince,\n\t\tPostalCode_lookup = PostalCode,\n\t\tCountryRegion_lookup = CountryRegion,\n\t\tGeographyKey\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> DimGeographySelect\nDimChannelSource select(mapColumn(\n\t\tChannel,\n\t\tChannelKey\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> DimChannelSelect\nGeographyKeyLookup, DimChannelSelect lookup(CustomerUnion@Channel == DimChannelSelect@Channel,\n\tmultiple: false,\n\tpickup: 'any',\n\tbroadcast: 'auto')~> ChannelKeyLookup\nChannelKeyLookup select(mapColumn(\n\t\tCustomerId,\n\t\tCustomer,\n\t\tChannelKey,\n\t\tGeographyKey\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> CustomerSelect\nSurrogateKey sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tstore: 'synapse',\n\tdatabaseType: 'spark',\n\tformat: 'table',\n\tdatabase: 'adworkstarget',\n\ttableName: 'DimCustomer',\n\trecreate:true,\n\tpartitionBy('hash', 1),\n\tmanifestType: 'manifest') ~> DimCustomerSink"
+		}
+	}
+}
