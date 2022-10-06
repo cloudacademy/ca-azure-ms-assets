@@ -6,17 +6,17 @@
             "pipelines": [
              {
                     "name": "DependentDimensions",
-                    "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Pipelines/DependentDimensions.json",
+                    "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Pipelines/DependentDimensions.json",
                     "tokens": []
               },
               {
                     "name": "FactTables",
-                    "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Pipelines/FactTables.json",
+                    "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Pipelines/FactTables.json",
                     "tokens": []
               },
               {
                     "name": "IndependentDimensions",
-                    "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Pipelines/IndependentDimensions.json",
+                    "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Pipelines/IndependentDimensions.json",
                     "tokens": []
               }
             
@@ -28,86 +28,86 @@
                 {
                     "name": "DimChannel_DF",
                     "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/DataFlows/DimChannel_DF.json"
+                    "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/DataFlows/DimChannel_DF.json"
                 },
                 {
                     "name": "DimCustomer_DF",
                     "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/DataFlows/DimCustomer_DF.json"
+                    "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/DataFlows/DimCustomer_DF.json"
                 },
                 {
                     "name": "DimDate_DF",
                     "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/DataFlows/DimDate_DF.json"
+                    "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/DataFlows/DimDate_DF.json"
                 },
                 {
                     "name": "DimGeography_DF",
                     "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/DataFlows/DimGeography_DF.json"
+                    "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/DataFlows/DimGeography_DF.json"
                 },
                 {
                     "name": "DimProduct_DF",
                     "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/DataFlows/DimProduct_DF.json"
+                    "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/DataFlows/DimProduct_DF.json"
                 },
                 {
                     "name": "FactSales_DF",
                     "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/DataFlows/FactSales_DF.json"
+                    "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/DataFlows/FactSales_DF.json"
                 },
                 {
                     "name": "adworks_DF",
                     "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/DataFlows/adworks_DF.json"
+                    "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/DataFlows/adworks_DF.json"
                 }
             ],
             "databases": [
                  {
                     "name": "adworkstarget",
                     "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/adworkstarget.json",
+                    "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/adworkstarget.json",
                     "tables": [],
                     "relationships":[]
                 },
                 {
                     "name": "adworks",
                     "interface": "rest",
-                    "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/adworks.json",
+                    "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/adworks.json",
                     "tables": [
                         {
                             "name": "ProductData",
                             "interface": "rest",
-                            "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/Tables/ProductData.json"
+                            "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/Tables/ProductData.json"
                         },
                         {
                             "name": "Sales",
                             "interface": "rest",
-                            "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/Tables/Sales.json"
+                            "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/Tables/Sales.json"
                         },
                         {
                             "name": "Calendar",
                             "interface": "rest",
-                            "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/Tables/Calendar.json"
+                            "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/Tables/Calendar.json"
                         },
                         {
                             "name": "CustomerData",
                             "interface": "rest",
-                            "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/Tables/CustomerData.json"
+                            "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/Tables/CustomerData.json"
                         },
                         {
                             "name": "Location",
                             "interface": "rest",
-                            "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/Tables/Location.json"
+                            "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/Tables/Location.json"
                         },
                         {
                             "name": "Reseller",
                             "interface": "rest",
-                            "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/Tables/Reseller.json"
+                            "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/Tables/Reseller.json"
                         },
                         {
                             "name": "SalesTerritory",
                             "interface": "rest",
-                            "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/Tables/SalesTerritory.json"
+                            "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/Tables/SalesTerritory.json"
                         }
                     ],
                     "relationships":[
@@ -115,22 +115,22 @@
                         {
                             "name": "relationship-SalesCustomerData",
                             "interface": "rest",
-                            "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/Relatioship/rsSalesCustomerData.json"
+                            "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/Relatioship/rsSalesCustomerData.json"
                         },
                         {
                             "name": "relationship-SalesDate",
                             "interface": "rest",
-                            "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/Relatioship/rsSalesDate.json"
+                            "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/Relatioship/rsSalesDate.json"
                         },
                         {
                             "name": "relationship-SalesProductData",
                             "interface": "rest",
-                            "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/Relatioship/rsSalesProductData.json"
+                            "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/Relatioship/rsSalesProductData.json"
                         },
                         {
                             "name": "relationship-SalesReseller",
                             "interface": "rest",
-                            "definitionFilePath": "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/Database/Relatioship/rsSalesReseller.json"
+                            "definitionFilePath": "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/Database/Relatioship/rsSalesReseller.json"
                         }
                         
                        
