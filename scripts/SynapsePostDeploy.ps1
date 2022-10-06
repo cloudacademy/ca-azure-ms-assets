@@ -171,7 +171,7 @@ function Save-SynapseSampleArtifacts {
   $headers = @{ Authorization = "Bearer $token" }
 
   $synapseTokens = @{"`#`#azsynapsewks`#`#" = $SynapseWorkspaceName; }
-  $indexFileUrl = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/index.json"
+  $indexFileUrl = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/index.json"
   $sampleCodeIndex = Invoke-WebRequest $indexFileUrl | ConvertFrom-Json
 
   foreach ($sampleArtifactCollection in $sampleCodeIndex) {
@@ -395,8 +395,8 @@ function Save-SynapseSampleArtifacts {
   if ((Get-Module -ListAvailable Az.Accounts) -eq $null) {
     Install-Module -Name Az.Accounts -Force
   }
-  
-  $uri = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/Geography.csv";
+
+  $uri = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Geography.csv";
   $bacpacFileName = "Geography.csv";
   #$storageaccount = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -406,188 +406,188 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri -OutFile $bacpacFileName 
   Set-AzStorageBlobContent -File $bacpacFileName -Container "raw" -Blob 'Geography.csv' -Context $ctx
 
-  # $uri1 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/date.csv";
-  # $bacpacFileName1 = "date.csv";
-  # #$storageaccount1 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey1 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri1 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/date.csv";
+  $bacpacFileName1 = "date.csv";
+  #$storageaccount1 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey1 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx1 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey1.Value[0]
+  $ctx1 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey1.Value[0]
 
-  # Invoke-WebRequest -Uri $uri1 -OutFile $bacpacFileName1 
-  # Set-AzStorageBlobContent -File $bacpacFileName1 -Container "raw" -Blob 'date.csv' -Context $ctx1
+  Invoke-WebRequest -Uri $uri1 -OutFile $bacpacFileName1 
+  Set-AzStorageBlobContent -File $bacpacFileName1 -Container "raw" -Blob 'date.csv' -Context $ctx1
 
-  # $uri2 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/HackneyLicense.csv";
-  # $bacpacFileName2 = "HackneyLicense.csv";
-  # #$storageaccount2 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey2 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri2 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/HackneyLicense.csv";
+  $bacpacFileName2 = "HackneyLicense.csv";
+  #$storageaccount2 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey2 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx2 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey2.Value[0]
+  $ctx2 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey2.Value[0]
 
-  # Invoke-WebRequest -Uri $uri2 -OutFile $bacpacFileName2 
-  # Set-AzStorageBlobContent -File $bacpacFileName2 -Container "raw" -Blob 'HackneyLicense.csv' -Context $ctx2
+  Invoke-WebRequest -Uri $uri2 -OutFile $bacpacFileName2 
+  Set-AzStorageBlobContent -File $bacpacFileName2 -Container "raw" -Blob 'HackneyLicense.csv' -Context $ctx2
 
-  # $uri3 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/Medallion.csv";
-  # $bacpacFileName3 = "Medallion.csv";
-  # #$storageaccount3 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey3 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri3 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Medallion.csv";
+  $bacpacFileName3 = "Medallion.csv";
+  #$storageaccount3 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey3 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx3 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey3.Value[0]
+  $ctx3 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey3.Value[0]
 
-  # Invoke-WebRequest -Uri $uri3 -OutFile $bacpacFileName3 
-  # Set-AzStorageBlobContent -File $bacpacFileName3 -Container "raw" -Blob 'Medallion.csv' -Context $ctx3
+  Invoke-WebRequest -Uri $uri3 -OutFile $bacpacFileName3 
+  Set-AzStorageBlobContent -File $bacpacFileName3 -Container "raw" -Blob 'Medallion.csv' -Context $ctx3
 
-  # $uri4 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/Time.csv";
-  # $bacpacFileName4 = "Time.csv";
-  # #$storageaccount4 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey4 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri4 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Time.csv";
+  $bacpacFileName4 = "Time.csv";
+  #$storageaccount4 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey4 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx4 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey4.Value[0]
+  $ctx4 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey4.Value[0]
 
-  # Invoke-WebRequest -Uri $uri4 -OutFile $bacpacFileName4 
-  # Set-AzStorageBlobContent -File $bacpacFileName4 -Container "raw" -Blob 'Time.csv' -Context $ctx4
+  Invoke-WebRequest -Uri $uri4 -OutFile $bacpacFileName4 
+  Set-AzStorageBlobContent -File $bacpacFileName4 -Container "raw" -Blob 'Time.csv' -Context $ctx4
 
-  # $uri5 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/Trip.csv";
-  # $bacpacFileName5 = "Trip.csv";
-  # #$storageaccount5 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey5 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri5 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Trip.csv";
+  $bacpacFileName5 = "Trip.csv";
+  #$storageaccount5 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey5 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx5 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey5.Value[0]
+  $ctx5 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey5.Value[0]
 
-  # Invoke-WebRequest -Uri $uri5 -OutFile $bacpacFileName5 
-  # Set-AzStorageBlobContent -File $bacpacFileName5 -Container "raw" -Blob 'Trip.csv' -Context $ctx5
+  Invoke-WebRequest -Uri $uri5 -OutFile $bacpacFileName5 
+  Set-AzStorageBlobContent -File $bacpacFileName5 -Container "raw" -Blob 'Trip.csv' -Context $ctx5
 
-  # $uri6 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/Weather.csv";
-  # $bacpacFileName6 = "Weather.csv";
-  # #$storageaccount6 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey6 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri6 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Weather.csv";
+  $bacpacFileName6 = "Weather.csv";
+  #$storageaccount6 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey6 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx6 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey6.Value[0]
+  $ctx6 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey6.Value[0]
 
-  # Invoke-WebRequest -Uri $uri6 -OutFile $bacpacFileName6 
-  # Set-AzStorageBlobContent -File $bacpacFileName6 -Container "raw" -Blob 'Weather.csv' -Context $ctx6
+  Invoke-WebRequest -Uri $uri6 -OutFile $bacpacFileName6 
+  Set-AzStorageBlobContent -File $bacpacFileName6 -Container "raw" -Blob 'Weather.csv' -Context $ctx6
 
-  # $uri7 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/yellow500.parquet";
-  # $bacpacFileName7 = "yellow500.parquet";
-  # #$storageaccount7 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey7 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri7 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/yellow500.parquet";
+  $bacpacFileName7 = "yellow500.parquet";
+  #$storageaccount7 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey7 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx7 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey7.Value[0]
+  $ctx7 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey7.Value[0]
 
-  # Invoke-WebRequest -Uri $uri7 -OutFile $bacpacFileName7 
-  # Set-AzStorageBlobContent -File $bacpacFileName7 -Container "raw" -Blob 'yellow/puYear=2022/puMonth=01/yellow.parquet' -Context $ctx7
+  Invoke-WebRequest -Uri $uri7 -OutFile $bacpacFileName7 
+  Set-AzStorageBlobContent -File $bacpacFileName7 -Container "raw" -Blob 'yellow/puYear=2022/puMonth=01/yellow.parquet' -Context $ctx7
 
-  # Write-Host "-----------------------------------------------------------Synapse retail files---------------------------------------------------------------"
+  Write-Host "-----------------------------------------------------------Synapse retail files---------------------------------------------------------------"
 
-  # $uri8 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/Calendar.csv";
-  # $bacpacFileName8 = "Calendar.csv";
-  # #$storageaccount8 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey8 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri8 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/Calendar.csv";
+  $bacpacFileName8 = "Calendar.csv";
+  #$storageaccount8 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey8 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx8 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey8.Value[0]
+  $ctx8 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey8.Value[0]
 
-  # Invoke-WebRequest -Uri $uri8 -OutFile $bacpacFileName8 
-  # Set-AzStorageBlobContent -File $bacpacFileName8 -Container "raw" -Blob 'SynapseRetailFiles/Calendar.csv' -Context $ctx8
+  Invoke-WebRequest -Uri $uri8 -OutFile $bacpacFileName8 
+  Set-AzStorageBlobContent -File $bacpacFileName8 -Container "raw" -Blob 'SynapseRetailFiles/Calendar.csv' -Context $ctx8
 
-  # $uri9 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/ChannelType.csv";
-  # $bacpacFileName9 = "ChannelType.csv";
-  # #$storageaccount9 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey9 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri9 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/ChannelType.csv";
+  $bacpacFileName9 = "ChannelType.csv";
+  #$storageaccount9 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey9 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx9 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey9.Value[0]
+  $ctx9 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey9.Value[0]
 
-  # Invoke-WebRequest -Uri $uri9 -OutFile $bacpacFileName9 
-  # Set-AzStorageBlobContent -File $bacpacFileName9 -Container "raw" -Blob 'SynapseRetailFiles/ChannelType.csv' -Context $ctx9
+  Invoke-WebRequest -Uri $uri9 -OutFile $bacpacFileName9 
+  Set-AzStorageBlobContent -File $bacpacFileName9 -Container "raw" -Blob 'SynapseRetailFiles/ChannelType.csv' -Context $ctx9
 
-  # $uri10 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/Country.csv";
-  # $bacpacFileName10 = "Country.csv";
-  # #$storageaccount10 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey10 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri10 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/Country.csv";
+  $bacpacFileName10 = "Country.csv";
+  #$storageaccount10 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey10 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx10 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey10.Value[0]
+  $ctx10 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey10.Value[0]
 
-  # Invoke-WebRequest -Uri $uri10 -OutFile $bacpacFileName10 
-  # Set-AzStorageBlobContent -File $bacpacFileName10 -Container "raw" -Blob 'SynapseRetailFiles/Country.csv' -Context $ctx10
+  Invoke-WebRequest -Uri $uri10 -OutFile $bacpacFileName10 
+  Set-AzStorageBlobContent -File $bacpacFileName10 -Container "raw" -Blob 'SynapseRetailFiles/Country.csv' -Context $ctx10
 
-  # $uri11 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/CustomerData.csv";
-  # $bacpacFileName11 = "CustomerData.csv";
-  # #$storageaccount11 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey11 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri11 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/CustomerData.csv";
+  $bacpacFileName11 = "CustomerData.csv";
+  #$storageaccount11 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey11 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx11 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey11.Value[0]
+  $ctx11 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey11.Value[0]
 
-  # Invoke-WebRequest -Uri $uri11 -OutFile $bacpacFileName11
-  # Set-AzStorageBlobContent -File $bacpacFileName11 -Container "raw" -Blob 'SynapseRetailFiles/CustomerData.csv' -Context $ctx11
+  Invoke-WebRequest -Uri $uri11 -OutFile $bacpacFileName11
+  Set-AzStorageBlobContent -File $bacpacFileName11 -Container "raw" -Blob 'SynapseRetailFiles/CustomerData.csv' -Context $ctx11
 
-  # $uri12 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/Location.csv";
-  # $bacpacFileName12 = "Location.csv";
-  # #$storageaccount12 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey12 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri12 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/Location.csv";
+  $bacpacFileName12 = "Location.csv";
+  #$storageaccount12 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey12 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx12 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey12.Value[0]
+  $ctx12 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey12.Value[0]
 
-  # Invoke-WebRequest -Uri $uri12 -OutFile $bacpacFileName12
-  # Set-AzStorageBlobContent -File $bacpacFileName12 -Container "raw" -Blob 'SynapseRetailFiles/Location.csv' -Context $ctx12
+  Invoke-WebRequest -Uri $uri12 -OutFile $bacpacFileName12
+  Set-AzStorageBlobContent -File $bacpacFileName12 -Container "raw" -Blob 'SynapseRetailFiles/Location.csv' -Context $ctx12
 
-  # $uri13 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/ProductData.csv";
-  # $bacpacFileName13 = "ProductData.csv";
-  # #$storageaccount13 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey13 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri13 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/ProductData.csv";
+  $bacpacFileName13 = "ProductData.csv";
+  #$storageaccount13 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey13 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx13 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey13.Value[0]
+  $ctx13 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey13.Value[0]
 
-  # Invoke-WebRequest -Uri $uri13 -OutFile $bacpacFileName13 
-  # Set-AzStorageBlobContent -File $bacpacFileName13 -Container "raw" -Blob 'SynapseRetailFiles/ProductData.csv' -Context $ctx13
+  Invoke-WebRequest -Uri $uri13 -OutFile $bacpacFileName13 
+  Set-AzStorageBlobContent -File $bacpacFileName13 -Container "raw" -Blob 'SynapseRetailFiles/ProductData.csv' -Context $ctx13
 
-  # $uri14 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/Reseller.csv";
-  # $bacpacFileName14 = "Reseller.csv";
-  # #$storageaccount14 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey14 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri14 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/Reseller.csv";
+  $bacpacFileName14 = "Reseller.csv";
+  #$storageaccount14 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey14 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx14 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey14.Value[0]
+  $ctx14 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey14.Value[0]
 
-  # Invoke-WebRequest -Uri $uri14 -OutFile $bacpacFileName14 
-  # Set-AzStorageBlobContent -File $bacpacFileName14 -Container "raw" -Blob 'SynapseRetailFiles/Reseller.csv' -Context $ctx14
+  Invoke-WebRequest -Uri $uri14 -OutFile $bacpacFileName14 
+  Set-AzStorageBlobContent -File $bacpacFileName14 -Container "raw" -Blob 'SynapseRetailFiles/Reseller.csv' -Context $ctx14
 
-  # $uri15 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/Sales.csv";
-  # $bacpacFileName15 = "Sales.parquet";
-  # #$storageaccount15 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey15 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri15 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/Sales.csv";
+  $bacpacFileName15 = "Sales.parquet";
+  #$storageaccount15 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey15 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx15 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey15.Value[0]
+  $ctx15 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey15.Value[0]
 
-  # Invoke-WebRequest -Uri $uri15 -OutFile $bacpacFileName15
-  # Set-AzStorageBlobContent -File $bacpacFileName15 -Container "raw" -Blob 'SynapseRetailFiles/Sales.csv' -Context $ctx15
+  Invoke-WebRequest -Uri $uri15 -OutFile $bacpacFileName15
+  Set-AzStorageBlobContent -File $bacpacFileName15 -Container "raw" -Blob 'SynapseRetailFiles/Sales.csv' -Context $ctx15
 
-  # $uri16 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/SalesOrder.csv";
-  # $bacpacFileName16 = "SalesOrder.csv";
-  # #$storageaccount16 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey16 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri16 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/SalesOrder.csv";
+  $bacpacFileName16 = "SalesOrder.csv";
+  #$storageaccount16 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey16 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx16 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey16.Value[0]
+  $ctx16 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey16.Value[0]
 
-  # Invoke-WebRequest -Uri $uri16 -OutFile $bacpacFileName16 
-  # Set-AzStorageBlobContent -File $bacpacFileName16 -Container "raw" -Blob 'SynapseRetailFiles/SalesOrder.csv' -Context $ctx16
+  Invoke-WebRequest -Uri $uri16 -OutFile $bacpacFileName16 
+  Set-AzStorageBlobContent -File $bacpacFileName16 -Container "raw" -Blob 'SynapseRetailFiles/SalesOrder.csv' -Context $ctx16
 
 
-  # $uri17 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/SalesTerritory.csv";
-  # $bacpacFileName17 = "SalesTerritory.csv";
-  # #$storageaccount17 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey17 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri17 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/SalesTerritory.csv";
+  $bacpacFileName17 = "SalesTerritory.csv";
+  #$storageaccount17 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey17 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx17 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey17.Value[0]
+  $ctx17 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey17.Value[0]
 
-  # Invoke-WebRequest -Uri $uri17 -OutFile $bacpacFileName17 
-  # Set-AzStorageBlobContent -File $bacpacFileName17 -Container "raw" -Blob 'SynapseRetailFiles/SalesTerritory.csv' -Context $ctx17
+  Invoke-WebRequest -Uri $uri17 -OutFile $bacpacFileName17 
+  Set-AzStorageBlobContent -File $bacpacFileName17 -Container "raw" -Blob 'SynapseRetailFiles/SalesTerritory.csv' -Context $ctx17
 
-  # $uri18 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/HolidayData/holiday.parquet";
-  # $bacpacFileName18 = "holiday.parquet";
-  # #$storageaccount18 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-  # $storageaccountkey18 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+  $uri18 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/HolidayData/holiday.parquet";
+  $bacpacFileName18 = "holiday.parquet";
+  #$storageaccount18 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+  $storageaccountkey18 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
 
-  # $ctx18 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey18.Value[0]
+  $ctx18 = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey18.Value[0]
 
-  # Invoke-WebRequest -Uri $uri18 -OutFile $bacpacFileName18 
-  # Set-AzStorageBlobContent -File $bacpacFileName18 -Container "raw" -Blob 'holiday.parquet' -Context $ctx18
+  Invoke-WebRequest -Uri $uri18 -OutFile $bacpacFileName18 
+  Set-AzStorageBlobContent -File $bacpacFileName18 -Container "raw" -Blob 'holiday.parquet' -Context $ctx18
 
   Write-Host "copying CSV files Completed." 
 }
