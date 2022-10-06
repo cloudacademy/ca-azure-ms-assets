@@ -396,7 +396,7 @@ function Save-SynapseSampleArtifacts {
     Install-Module -Name Az.Accounts -Force
   }
 
-  $uri = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Geography.csv";
+  $uri = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/Geography.csv";
   $bacpacFileName = "Geography.csv";
   #$storageaccount = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -406,7 +406,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri -OutFile $bacpacFileName 
   Set-AzStorageBlobContent -File $bacpacFileName -Container "raw" -Blob 'Geography.csv' -Context $ctx
 
-  $uri1 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/date.csv";
+  $uri1 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/date.csv";
   $bacpacFileName1 = "date.csv";
   #$storageaccount1 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey1 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -416,7 +416,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri1 -OutFile $bacpacFileName1 
   Set-AzStorageBlobContent -File $bacpacFileName1 -Container "raw" -Blob 'date.csv' -Context $ctx1
 
-  $uri2 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/HackneyLicense.csv";
+  $uri2 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/HackneyLicense.csv";
   $bacpacFileName2 = "HackneyLicense.csv";
   #$storageaccount2 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey2 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -426,7 +426,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri2 -OutFile $bacpacFileName2 
   Set-AzStorageBlobContent -File $bacpacFileName2 -Container "raw" -Blob 'HackneyLicense.csv' -Context $ctx2
 
-  $uri3 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Medallion.csv";
+  $uri3 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/Medallion.csv";
   $bacpacFileName3 = "Medallion.csv";
   #$storageaccount3 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey3 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -436,7 +436,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri3 -OutFile $bacpacFileName3 
   Set-AzStorageBlobContent -File $bacpacFileName3 -Container "raw" -Blob 'Medallion.csv' -Context $ctx3
 
-  $uri4 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Time.csv";
+  $uri4 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/Time.csv";
   $bacpacFileName4 = "Time.csv";
   #$storageaccount4 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey4 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -446,7 +446,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri4 -OutFile $bacpacFileName4 
   Set-AzStorageBlobContent -File $bacpacFileName4 -Container "raw" -Blob 'Time.csv' -Context $ctx4
 
-  $uri5 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Trip.csv";
+  $uri5 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/Trip.csv";
   $bacpacFileName5 = "Trip.csv";
   #$storageaccount5 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey5 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -456,7 +456,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri5 -OutFile $bacpacFileName5 
   Set-AzStorageBlobContent -File $bacpacFileName5 -Container "raw" -Blob 'Trip.csv' -Context $ctx5
 
-  $uri6 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Weather.csv";
+  $uri6 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/Weather.csv";
   $bacpacFileName6 = "Weather.csv";
   #$storageaccount6 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey6 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -466,7 +466,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri6 -OutFile $bacpacFileName6 
   Set-AzStorageBlobContent -File $bacpacFileName6 -Container "raw" -Blob 'Weather.csv' -Context $ctx6
 
-  $uri7 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/yellow500.parquet";
+  $uri7 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/TaxiDataFiles/yellow500.parquet";
   $bacpacFileName7 = "yellow500.parquet";
   #$storageaccount7 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey7 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -478,7 +478,7 @@ function Save-SynapseSampleArtifacts {
 
   Write-Host "-----------------------------------------------------------Synapse retail files---------------------------------------------------------------"
 
-  $uri8 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/Calendar.csv";
+  $uri8 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/Calendar.csv";
   $bacpacFileName8 = "Calendar.csv";
   #$storageaccount8 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey8 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -488,7 +488,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri8 -OutFile $bacpacFileName8 
   Set-AzStorageBlobContent -File $bacpacFileName8 -Container "raw" -Blob 'SynapseRetailFiles/Calendar.csv' -Context $ctx8
 
-  $uri9 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/ChannelType.csv";
+  $uri9 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/ChannelType.csv";
   $bacpacFileName9 = "ChannelType.csv";
   #$storageaccount9 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey9 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -498,7 +498,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri9 -OutFile $bacpacFileName9 
   Set-AzStorageBlobContent -File $bacpacFileName9 -Container "raw" -Blob 'SynapseRetailFiles/ChannelType.csv' -Context $ctx9
 
-  $uri10 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/Country.csv";
+  $uri10 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/Country.csv";
   $bacpacFileName10 = "Country.csv";
   #$storageaccount10 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey10 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -508,7 +508,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri10 -OutFile $bacpacFileName10 
   Set-AzStorageBlobContent -File $bacpacFileName10 -Container "raw" -Blob 'SynapseRetailFiles/Country.csv' -Context $ctx10
 
-  $uri11 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/CustomerData.csv";
+  $uri11 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/CustomerData.csv";
   $bacpacFileName11 = "CustomerData.csv";
   #$storageaccount11 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey11 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -518,7 +518,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri11 -OutFile $bacpacFileName11
   Set-AzStorageBlobContent -File $bacpacFileName11 -Container "raw" -Blob 'SynapseRetailFiles/CustomerData.csv' -Context $ctx11
 
-  $uri12 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/Location.csv";
+  $uri12 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/Location.csv";
   $bacpacFileName12 = "Location.csv";
   #$storageaccount12 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey12 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -528,7 +528,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri12 -OutFile $bacpacFileName12
   Set-AzStorageBlobContent -File $bacpacFileName12 -Container "raw" -Blob 'SynapseRetailFiles/Location.csv' -Context $ctx12
 
-  $uri13 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/ProductData.csv";
+  $uri13 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/ProductData.csv";
   $bacpacFileName13 = "ProductData.csv";
   #$storageaccount13 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey13 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -538,7 +538,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri13 -OutFile $bacpacFileName13 
   Set-AzStorageBlobContent -File $bacpacFileName13 -Container "raw" -Blob 'SynapseRetailFiles/ProductData.csv' -Context $ctx13
 
-  $uri14 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/Reseller.csv";
+  $uri14 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/Reseller.csv";
   $bacpacFileName14 = "Reseller.csv";
   #$storageaccount14 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey14 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -548,7 +548,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri14 -OutFile $bacpacFileName14 
   Set-AzStorageBlobContent -File $bacpacFileName14 -Container "raw" -Blob 'SynapseRetailFiles/Reseller.csv' -Context $ctx14
 
-  $uri15 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/Sales.csv";
+  $uri15 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/Sales.csv";
   $bacpacFileName15 = "Sales.parquet";
   #$storageaccount15 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey15 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -558,7 +558,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri15 -OutFile $bacpacFileName15
   Set-AzStorageBlobContent -File $bacpacFileName15 -Container "raw" -Blob 'SynapseRetailFiles/Sales.csv' -Context $ctx15
 
-  $uri16 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/SalesOrder.csv";
+  $uri16 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/SalesOrder.csv";
   $bacpacFileName16 = "SalesOrder.csv";
   #$storageaccount16 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey16 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -569,7 +569,7 @@ function Save-SynapseSampleArtifacts {
   Set-AzStorageBlobContent -File $bacpacFileName16 -Container "raw" -Blob 'SynapseRetailFiles/SalesOrder.csv' -Context $ctx16
 
 
-  $uri17 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/SynapseRetailFiles/SalesTerritory.csv";
+  $uri17 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/SynapseRetailFiles/SalesTerritory.csv";
   $bacpacFileName17 = "SalesTerritory.csv";
   #$storageaccount17 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey17 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
@@ -579,7 +579,7 @@ function Save-SynapseSampleArtifacts {
   Invoke-WebRequest -Uri $uri17 -OutFile $bacpacFileName17 
   Set-AzStorageBlobContent -File $bacpacFileName17 -Container "raw" -Blob 'SynapseRetailFiles/SalesTerritory.csv' -Context $ctx17
 
-  $uri18 = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/HolidayData/holiday.parquet";
+  $uri18 = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/Artifacts/HolidayData/holiday.parquet";
   $bacpacFileName18 = "holiday.parquet";
   #$storageaccount18 = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
   $storageaccountkey18 = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
