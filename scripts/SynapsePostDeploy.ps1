@@ -171,7 +171,7 @@ function Save-SynapseSampleArtifacts {
   $headers = @{ Authorization = "Bearer $token" }
 
   $synapseTokens = @{"`#`#azsynapsewks`#`#" = $SynapseWorkspaceName; }
-  $indexFileUrl = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/index.json"
+  $indexFileUrl = "https://raw.githubusercontent.com/cloudacademy/ca-azure-ms-assets/main/Sample/index.json"
   $sampleCodeIndex = Invoke-WebRequest $indexFileUrl | ConvertFrom-Json
 
   foreach ($sampleArtifactCollection in $sampleCodeIndex) {
